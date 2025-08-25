@@ -34,15 +34,7 @@
             animation: waveFlag 10s ease infinite;
             /* New animation */
         }
- :root {
-            --primary: #D78600;
-            --primary-dark: #B56D3A;
-            --secondary: #9E5B2E;
-            --dark: #511D16;
-            --burgundy: #6B3A3E;
-            --light-brown: #B56D3A;
-            --light-gray: #c2c2c2;
-        }
+
         @keyframes waveFlag {
             0% {
                 background-position: 0% 50%;
@@ -195,33 +187,75 @@
             -webkit-backdrop-filter: blur(10px);
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
+/* Glassmorphism Navbar */
+.navbar-glass {
+    background: rgba(255, 255, 255, 0.08); /* Transparent white */
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+/* Glassmorphism Navbar */
+.navbar-glass {
+    background: rgba(84, 28, 28, 0.3); /* Semi-transparent dark brown */
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+}
 
-        .nav-link {
-            position: relative;
-            transition: color 0.3s ease;
-        }
+.navbar-glass:hover {
+    background: rgba(84, 28, 28, 0.5);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
 
-        .nav-link:hover {
-            color: #F28C1A;
-            /* Accent color on hover */
-        }
+/* Navbar links */
+.navbar-glass .nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+}
 
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            display: block;
-            margin-top: 5px;
-            right: 0;
-            background: #F28C1A;
-            transition: width 0.3s ease;
-        }
+.navbar-glass .nav-link:hover {
+    color: #F28C1A !important;
+}
 
-        .nav-link:hover::after {
-            width: 100%;
-            left: 0;
-        }
+.navbar-glass .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #F28C1A;
+    transition: width 0.3s ease;
+}
+
+.navbar-glass .nav-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Hamburger icon */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1); /* make it white */
+}
+
+/* Navbar scroll effect */
+.navbar-scrolled {
+    background: rgba(84, 28, 28, 0.7);
+    backdrop-filter: blur(20px);
+}
 
         /* Footer Styles */
         .site-footer {
@@ -266,7 +300,6 @@
     <div id="loader" class="animated-gradient">
         <img src="assets/img/logo.png" alt="Loading Logo" class="loader-logo">
     </div>
-
 <header class="site-header bg-primary-800/50 backdrop-blur-md border-b border-white/10">
   <div class="container mx-auto px-6 py-4 flex justify-between items-center">
     <!-- Logo -->
@@ -304,6 +337,9 @@
     <a href="#" class="block font-semibold text-white hover:text-orange-400 transition">Schedule</a>
   </nav>
 </header>
+
+
+
 
 
     <div id="page-content" class="min-h-screen w-full flex flex-col items-center justify-center p-4 sm:p-6 lg:p-8">
@@ -394,21 +430,21 @@
     </footer>
     <!-- Interactive Canvas -->
     <canvas id="interactiveCanvas" class="fixed top-0 left-0 w-full h-full pointer-events-none z-0"></canvas>
-  
-<script>
-  const toggleButton = document.getElementById('nav-toggle');
-  const mobileMenu = document.getElementById('nav-menu-mobile');
-  const hamburgerIcon = document.getElementById('hamburger');
-  const closeIcon = document.getElementById('close');
-
-  toggleButton.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-    hamburgerIcon.classList.toggle('hidden');
-    closeIcon.classList.toggle('hidden');
-  });
-</script>
-
     <script>
+    // Toggle mobile menu
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('hidden');
+        navMenu.classList.toggle('flex');
+        navMenu.classList.toggle('flex-col');
+        navMenu.classList.toggle('space-y-4');
+        navMenu.classList.toggle('space-x-0');
+        navMenu.classList.toggle('mt-4');
+    });
+</script>
+<script>
         // --- SCRIPT FOR LOADER ---
         window.addEventListener('load', () => {
             const loader = document.getElementById('loader');
@@ -533,6 +569,8 @@
             );
         }
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>

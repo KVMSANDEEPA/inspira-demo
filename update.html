@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Soon! - INSPIRA 2025</title>
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        /* Using the Poppins font family */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Animated gradient background from the main page */
+        .animated-gradient {
+            background: linear-gradient(-45deg, #541C1C, #6B2E2E, #874C1B, #541C1C);
+            background-size: 600% 600%;
+            animation: waveFlag 20s ease infinite;
+        }
+
+        @keyframes waveFlag {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Keyframes for fade-in animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease-out forwards;
+        }
+        
+        /* Glow effect for the button */
+        .glow-button {
+            transition: all 0.3s ease;
+            box-shadow: 0 0 5px rgba(242, 140, 26, 0.3), 0 0 10px rgba(242, 140, 26, 0.2);
+        }
+        .glow-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 15px rgba(242, 140, 26, 0.6), 0 0 25px rgba(242, 140, 26, 0.4);
+        }
+    </style>
+</head>
+<body class="animated-gradient text-white overflow-x-hidden">
+
+    <!-- Main Content Container -->
+    <div class="min-h-screen w-full flex flex-col items-center justify-center p-4 sm:p-6 lg:p-8">
+        
+        <main class="w-full max-w-2xl mx-auto text-center flex flex-col items-center fade-in">
+
+            <!-- Logo -->
+            <div class="mb-8">
+                 <img src="assets/img/logo2.jpg" alt="Site Logo" class="h-24 w-24 rounded-full object-cover border-4 border-orange-400 p-1">
+            </div>
+
+            <!-- Message -->
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-black uppercase tracking-wider" style="text-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+                Update <span style="color: #F28C1A;">Soon!</span>
+            </h1>
+            <p class="text-lg sm:text-xl font-semibold mt-4 text-gray-300">
+                We are working hard to bring you this content. Please check back later.
+            </p>
+            
+            <!-- Go Back Button -->
+            <div class="mt-12">
+                <button onclick="goBack()" class="glow-button flex items-center gap-2 bg-[#874C1B] hover:bg-[#6e3d15] text-white font-bold py-3 px-8 rounded-full text-lg">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                    Go Back
+                </button>
+            </div>
+
+        </main>
+    </div>
+
+    <script>
+        // Function to go back to the previous page in history
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
+</body>
+</html>
