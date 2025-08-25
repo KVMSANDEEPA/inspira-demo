@@ -7,6 +7,7 @@
     <title>INSPIRA 2025 - The Talent Show</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap"
@@ -14,12 +15,284 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
     <link rel="icon" href="assets/img/favicon/favicon.ico" type="image/x-icon">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
-    <link rel="android-chrome-icon" sizes="192x192" href="assets/img/favicon/android-chrome-192x192.png">
-    <link rel="android-chrome-icon" sizes="512x512" href="assets/img/favicon/android-chrome-512x512.png">
-    <link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+<link rel="android-chrome-icon" sizes="192x192" href="assets/img/favicon/android-chrome-192x192.png">
+<link rel="android-chrome-icon" sizes="512x512" href="assets/img/favicon/android-chrome-512x512.png">
+    <style>
+        /* Using the Poppins font family */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* --- NEW: Updated background animation for a waving flag effect --- */
+        .animated-gradient {
+            background: linear-gradient(-45deg, #541C1C, #6B2E2E, #874C1B, #541C1C);
+            background-size: 600% 600%;
+            /* Increased size for smoother movement */
+            animation: waveFlag 10s ease infinite;
+            /* New animation */
+        }
+
+        @keyframes waveFlag {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* --- END OF NEW STYLES --- */
+
+        /* Keyframes for fade-in-up animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Applying animations with delays */
+        .fade-in-up-1 {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+        }
+
+        .fade-in-up-2 {
+            animation: fadeInUp 0.8s 0.2s ease-out forwards;
+            opacity: 0;
+        }
+
+        .fade-in-up-3 {
+            animation: fadeInUp 0.8s 0.4s ease-out forwards;
+            opacity: 0;
+        }
+
+        .fade-in-up-4 {
+            animation: fadeInUp 0.8s 0.6s ease-out forwards;
+            opacity: 0;
+        }
+
+        .fade-in-up-5 {
+            animation: fadeInUp 0.8s 0.8s ease-out forwards;
+            opacity: 0;
+        }
+
+        /* Styling for the countdown timer text shadow */
+        .timer-text {
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        }
+
+        /* Glow effect for live stream buttons */
+        .glow-button {
+            transition: all 0.3s ease;
+            box-shadow: 0 0 5px rgba(242, 140, 26, 0.3), 0 0 10px rgba(242, 140, 26, 0.2);
+        }
+
+        .glow-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 15px rgba(242, 140, 26, 0.6), 0 0 25px rgba(242, 140, 26, 0.4);
+        }
+
+        /* Custom button colors from the palette */
+        .btn-zoom {
+            background-color: #874C1B;
+        }
+
+        .btn-zoom:hover {
+            background-color: #6e3d15;
+        }
+
+        .btn-youtube {
+            background-color: #6B2E2E;
+        }
+
+        .btn-youtube:hover {
+            background-color: #522424;
+        }
+
+        .btn-facebook {
+            background-color: #541C1C;
+        }
+
+        .btn-facebook:hover {
+            background-color: #3d1414;
+        }
+
+        /* --- STYLES FOR ADVANCED LAYOUT --- */
+
+        /* Loading Animation Styles */
+        #loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 2s ease-out, visibility 3s ease-out;
+        }
+
+        #loader.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .loader-logo {
+            width: 250px;
+            height: 250px;
+            animation: pulse 1s infinite ease-in-out;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(0.95);
+            }
+
+            70% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(0.95);
+            }
+        }
+
+        /* Header Styles */
+        .site-header {
+            margin: 1%;
+            border-radius: 2rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 98%;
+            z-index: 1000;
+            background-color: rgba(84, 28, 28, 0.5);
+            /* Semi-transparent dark brown */
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+/* Glassmorphism Navbar */
+.navbar-glass {
+    background: rgba(255, 255, 255, 0.08); /* Transparent white */
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+/* Glassmorphism Navbar */
+.navbar-glass {
+    background: rgba(84, 28, 28, 0.3); /* Semi-transparent dark brown */
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-glass:hover {
+    background: rgba(84, 28, 28, 0.5);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Navbar links */
+.navbar-glass .nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar-glass .nav-link:hover {
+    color: #F28C1A !important;
+}
+
+.navbar-glass .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #F28C1A;
+    transition: width 0.3s ease;
+}
+
+.navbar-glass .nav-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Hamburger icon */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1); /* make it white */
+}
+
+/* Navbar scroll effect */
+.navbar-scrolled {
+    background: rgba(84, 28, 28, 0.7);
+    backdrop-filter: blur(20px);
+}
+
+        /* Footer Styles */
+        .site-footer {
+            background-color: rgba(84, 28, 28, 0.5);
+            /* Semi-transparent dark brown */
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Page content wrapper to prevent content from hiding behind fixed header */
+        #page-content {
+            margin-top: 7%;
+            padding-top: 10%;
+            /* Adjust based on header height */
+            padding-bottom: 100px;
+            /* Adjust based on footer height */
+        }
+
+        @media (max-width: 768px) {
+            .site-header {
+                margin-top: 2vh;
+            }
+            #page-content {
+                margin-top: 25%; /* or 10% depending on your need */
+          }
+
+        }
+
+        /* Ticket Button  */
+        .ticket_btn {
+            margin-top: 2%;
+        }
+
+        #countdown-container {
+            margin: 5vh 0vh;
+        }
+
+    </style>
 </head>
 
 <body class="animated-gradient text-white overflow-x-hidden">
@@ -56,15 +329,14 @@
     </nav>
   </div>
 
-</header>
-
-<!-- Mobile Navigation -->
-<nav id="nav-menu-mobile" class="sm:hidden px-6 pb-4 space-y-2 bg-primary-800/50 backdrop-blur-md border-t border-white/10 rounded-b-lg">
+  <!-- Mobile Navigation -->
+  <nav id="nav-menu-mobile" class="sm:hidden hidden px-6 pb-4 space-y-2 bg-primary-800/50 backdrop-blur-md border-t border-white/10 rounded-b-lg">
     <a href="index.html" class="block font-semibold text-orange-400 hover:text-white transition">Home</a>
     <a href="about.html" class="block font-semibold text-white hover:text-orange-400 transition">About</a>
     <a href="ticket.html" class="block font-semibold text-white hover:text-orange-400 transition">Get Ticket</a>
     <a href="#" class="block font-semibold text-white hover:text-orange-400 transition">Schedule</a>
-</nav>
+  </nav>
+</header>
 
 
 
@@ -158,7 +430,147 @@
     </footer>
     <!-- Interactive Canvas -->
     <canvas id="interactiveCanvas" class="fixed top-0 left-0 w-full h-full pointer-events-none z-0"></canvas>
-    <script src="assets/js/main.js" defer></script>
+    <script>
+    // Toggle mobile menu
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('hidden');
+        navMenu.classList.toggle('flex');
+        navMenu.classList.toggle('flex-col');
+        navMenu.classList.toggle('space-y-4');
+        navMenu.classList.toggle('space-x-0');
+        navMenu.classList.toggle('mt-4');
+    });
+</script>
+<script>
+        // --- SCRIPT FOR LOADER ---
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('loader');
+            // Add a small delay for a smoother transition
+            setTimeout(() => {
+                loader.classList.add('hidden');
+            }, 500); // 500ms delay
+        });
+
+        // --- SCRIPT FOR COUNTDOWN ---
+        const countDownDate = new Date("Oct 1, 2025 00:00:00").getTime();
+        const daysEl = document.getElementById("days");
+        const hoursEl = document.getElementById("hours");
+        const minutesEl = document.getElementById("minutes");
+        const secondsEl = document.getElementById("seconds");
+        const countdownContainer = document.getElementById("countdown-container");
+
+        const x = setInterval(function () {
+            const now = new Date().getTime();
+            const distance = countDownDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            daysEl.innerHTML = days < 10 ? '0' + days : days;
+            hoursEl.innerHTML = hours < 10 ? '0' + hours : hours;
+            minutesEl.innerHTML = minutes < 10 ? '0' + minutes : minutes;
+            secondsEl.innerHTML = seconds < 10 ? '0' + seconds : seconds;
+
+            if (distance < 0) {
+                clearInterval(x);
+                countdownContainer.innerHTML = '<h2 class="col-span-2 sm:col-span-4 text-3xl font-bold" style="color: #F28C1A;">The Event is LIVE!</h2>';
+            }
+        }, 1000);
+        // Interactive Canvas
+        const canvas = document.getElementById("interactiveCanvas");
+        const ctx = canvas.getContext("2d");
+        let particles = [];
+        let mouse = { x: 0, y: 0 };
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        function createParticle(x, y) {
+            return {
+                x: x,
+                y: y,
+                vx: (Math.random() - 0.5) * 2,
+                vy: (Math.random() - 0.5) * 2,
+                size: Math.random() * 5 + 2,
+                color: `hsl(${Math.random() * 60 + 20}, 70%, 60%)`,
+                life: 1,
+                decay: Math.random() * 0.02 + 0.005,
+            };
+        }
+        function updateParticles() {
+            for (let i = particles.length - 1; i >= 0; i--) {
+                const particle = particles[i];
+                particle.x += particle.vx;
+                particle.y += particle.vy;
+                particle.life -= particle.decay;
+                particle.size *= 0.98;
+                if (particle.life <= 0 || particle.size <= 0.5) {
+                    particles.splice(i, 1);
+                }
+            }
+        }
+        function drawParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach((particle) => {
+                ctx.save();
+                ctx.globalAlpha = particle.life;
+                ctx.fillStyle = particle.color;
+                ctx.beginPath();
+                ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
+                ctx.fill();
+                ctx.shadowBlur = 20;
+                ctx.shadowColor = particle.color;
+                ctx.fill();
+                ctx.restore();
+            });
+        }
+        function animate() {
+            updateParticles();
+            drawParticles();
+            requestAnimationFrame(animate);
+        }
+        canvas.addEventListener("mousemove", (e) => {
+            mouse.x = e.clientX;
+            mouse.y = e.clientY;
+            if (Math.random() > 0.7) {
+                particles.push(createParticle(mouse.x, mouse.y));
+            }
+        });
+        canvas.addEventListener("click", (e) => {
+            for (let i = 0; i < 15; i++) {
+                particles.push(createParticle(e.clientX, e.clientY));
+            }
+        });
+        window.addEventListener("resize", resizeCanvas);
+        setInterval(() => {
+            if (particles.length < 50) {
+                particles.push(
+                    createParticle(
+                        Math.random() * canvas.width,
+                        Math.random() * canvas.height
+                    )
+                );
+            }
+        }, 200);
+        // Initialize
+        resizeCanvas();
+        animate();
+        for (let i = 0; i < 20; i++) {
+            particles.push(
+                createParticle(
+                    Math.random() * window.innerWidth,
+                    Math.random() * window.innerHeight
+                )
+            );
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>

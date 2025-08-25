@@ -9,6 +9,7 @@
     <meta name="generator" content="Hugo 0.72.0">
     <title>INSPIRA 2025 - About Us</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap"
@@ -22,7 +23,485 @@
     <link rel="android-chrome-icon" sizes="192x192" href="assets/img/favicon/android-chrome-192x192.png">
     <link rel="android-chrome-icon" sizes="512x512" href="assets/img/favicon/android-chrome-512x512.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        :root {
+            --primary: #D78600;
+            --primary-dark: #B56D3A;
+            --secondary: #9E5B2E;
+            --dark: #511D16;
+            --burgundy: #6B3A3E;
+            --light-brown: #B56D3A;
+            --light-gray: #c2c2c2;
+        }
+
+        .body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* --- NEW: Updated background animation for a waving flag effect --- */
+        .animated-gradient {
+            background: linear-gradient(-45deg, #541C1C, #6B2E2E, #874C1B, #541C1C);
+            background-size: 600% 600%;
+            /* Increased size for smoother movement */
+            animation: waveFlag 10s ease infinite;
+            /* New animation */
+        }
+
+        @keyframes waveFlag {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* --- END OF NEW STYLES --- */
+
+        /* Keyframes for fade-in-up animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Applying animations with delays */
+        .fade-in-up-1 {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+        }
+
+        .fade-in-up-2 {
+            animation: fadeInUp 0.8s 0.2s ease-out forwards;
+            opacity: 0;
+        }
+
+        .fade-in-up-3 {
+            animation: fadeInUp 0.8s 0.4s ease-out forwards;
+            opacity: 0;
+        }
+
+        .fade-in-up-4 {
+            animation: fadeInUp 0.8s 0.6s ease-out forwards;
+            opacity: 0;
+        }
+
+        .fade-in-up-5 {
+            animation: fadeInUp 0.8s 0.8s ease-out forwards;
+            opacity: 0;
+        }
+
+        /* Loading Animation Styles */
+        #loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 2s ease-out, visibility 3s ease-out;
+        }
+
+        #loader.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .loader-logo {
+            width: 250px;
+            height: 250px;
+            animation: pulse 1s infinite ease-in-out;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(0.95);
+            }
+
+            70% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(0.95);
+            }
+        }
+
+        /* Header Styles */
+        .site-header {
+            margin: 1%;
+            border-radius: 2rem;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 98%;
+            z-index: 1000;
+            background-color: rgba(84, 28, 28, 0.5);
+            /* Semi-transparent dark brown */
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #F28C1A;
+            /* Accent color on hover */
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            display: block;
+            margin-top: 5px;
+            right: 0;
+            background: #F28C1A;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+            left: 0;
+        }
+
+        .hero {
+
+            color: white;
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .section-title {
+            position: relative;
+            margin-bottom: 60px;
+            font-size: 3rem;
+
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: var(--primary);
+        }
+
+        .sub-title {
+            font-size: 2.5rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+            color: rgb(234, 234, 234);
+
+        }
+
+        .speaker-card {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 30px;
+            color: #511D16;
+            background-color: #c2c2c2;
+        }
+
+        .speaker-card:hover {
+            transform: translateY(-10px);
+            color: var(--primary);
+            background-color: #F28C1A;
+        }
+
+
+        /* --- Contact Section Styling --- */
+        .contact-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            /* Makes the section take full screen height */
+            padding: 2rem;
+            font-family: sans-serif;
+            background-color: #874C1B;
+            /* Medium Brown */
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            padding: 2.5rem;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .form-title {
+            font-size: 2.25rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #541C1C;
+            /* Dark Brown */
+        }
+
+        .input-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .input-label {
+            display: block;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            color: #6B2E2E;
+            /* Deep Reddish Brown */
+        }
+
+        .form-input,
+        .form-textarea {
+            width: 100%;
+            padding: 0.9rem 1rem;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: border-color 0.2s, box-shadow 0.2s;
+            color: #541C1C;
+        }
+
+        .form-input:focus,
+        .form-textarea:focus {
+            outline: none;
+            border-color: #B56933;
+            /* Warm Brown */
+            box-shadow: 0 0 0 3px rgba(181, 105, 51, 0.25);
+            /* Warm Brown with opacity */
+        }
+
+        .form-textarea {
+            resize: vertical;
+            /* Allows vertical resize, not horizontal */
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 1rem;
+            border: none;
+            border-radius: 6px;
+            background-color: #874C1B;
+            /* Medium Brown */
+            color: white;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .submit-btn:hover {
+            background-color: #6B2E2E;
+            /* Deep Reddish Brown on hover */
+            transform: scale(1.02);
+        }
+
+        /* Style for the status message */
+        #form-status {
+            text-align: center;
+            margin-top: 1rem;
+            font-weight: 500;
+        }
+
+        /* --- RESPONSIVENESS FIXES --- */
+        @media (max-width: 991px) {
+            .hero .text-center-md {
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2.5rem;
+            }
+
+            .sub-title {
+                font-size: 2rem;
+            }
+
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+
+            .hero {
+                padding: 60px 0;
+            }
+        }
+
+        /* --- MEMBER SECTION STYLES --- */
+        .member-section {
+            padding: 50px 0 100px;
+
+        }
+
+        .member-section .slider-wrapper {
+            overflow: hidden;
+            margin: 0px 25px 30px;
+        }
+
+        .member-section .member {
+            display: flex;
+            padding: 35px;
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 100px;
+        }
+
+        .member-section .member .user-image {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            margin-bottom: 50px;
+            border-radius: 100%;
+        }
+
+        .member-section .member .name {
+            margin-bottom: 16px;
+            font-size: 20px;
+            font-weight: 300;
+        }
+
+        .member-section .member .post {
+            line-height: 25px;
+            font-weight: 100;
+        }
+
+        .member-section .section-title {
+            text-align: center;
+            position: absolute;
+            position: relative;
+            text-decoration: #F28C1A 1px;
+            font-size: 40px;
+            font-weight: 300;
+        }
+
+        .member-section .swiper-pagination-bullet {
+            width: 15px;
+            height: 15px;
+            opacity: 1;
+            background-color: #541c1c;
+        }
+
+        .member-section .swiper-slide-button {
+            color: #541c1c;
+            margin-top: -50px;
+            transition: 0.3s ease;
+        }
+
+        .member-section .swiper-slide-button:hover {
+            color: #F28C1A;
+        }
+
+        .member-section {
+            opacity: 0;
+            /* Start hidden */
+            transform: translateY(20px);
+            /* Start slightly lower */
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            /* Transition for smooth effect */
+        }
+
+        .member-section.visible {
+            opacity: 1;
+            /* Fully visible */
+            transform: translateY(0);
+            /* Move to original position */
+        }
+
+        /* .schedule-item {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 30px;
+        }
+
+        .schedule-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 5px;
+            height: 15px;
+            width: 15px;
+            background: var(--primary);
+            border-radius: 50%;
+        }
+
+        .schedule-item::after {
+            content: '';
+            position: absolute;
+            left: 7px;
+            top: 20px;
+            bottom: -30px;
+            width: 1px;
+            background: var(--light-gray);
+        } */
+          .glass-effect {
+    border-radius: 20px; /* rounded corners */
+    border: 1px solid rgba(255, 255, 255, 0.25); /* subtle border */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.649); /* depth */
+ z-index: 1000;
+            
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);  
+}
+
+
+  /* Optional: make modal body padding cleaner */
+  .modal-body {
+    border-radius: 20px;
+    padding: 2rem;
+  }
+  
+  .btn-close{
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      z-index: 1100;
+        background-color: #F28C1A;
+  }
+  </style>
 </head>
 
 <body class="animated-gradient text-white overflow-x-hidden">
@@ -61,15 +540,14 @@
     </nav>
   </div>
 
-</header>
-
-<!-- Mobile Navigation -->
-<nav id="nav-menu-mobile" class="sm:hidden px-6 pb-4 space-y-2 bg-primary-800/50 backdrop-blur-md border-t border-white/10 rounded-b-lg">
+  <!-- Mobile Navigation -->
+  <nav id="nav-menu-mobile" class="sm:hidden hidden px-6 pb-4 space-y-2 bg-primary-800/50 backdrop-blur-md border-t border-white/10 rounded-b-lg">
     <a href="index.html" class="block font-semibold text-orange-400 hover:text-white transition">Home</a>
     <a href="about.html" class="block font-semibold text-white hover:text-orange-400 transition">About</a>
     <a href="ticket.html" class="block font-semibold text-white hover:text-orange-400 transition">Get Ticket</a>
     <a href="#" class="block font-semibold text-white hover:text-orange-400 transition">Schedule</a>
-</nav>
+  </nav>
+</header>
     <section id="home" class="hero pt-20">
         <div class="container pt-5">
             <div class="row align-items-center">
@@ -443,8 +921,202 @@
         </div>
     </footer>
     <canvas id="interactiveCanvas" class="fixed top-0 left-0 w-full h-full pointer-events-none z-0"></canvas>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="assets/js/main.js" defer></script>
-    <script src="assets/js/about.js" defer></script>
+    <script>
+    // Toggle mobile menu
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('hidden');
+        navMenu.classList.toggle('flex');
+        navMenu.classList.toggle('flex-col');
+        navMenu.classList.toggle('space-y-4');
+        navMenu.classList.toggle('space-x-0');
+        navMenu.classList.toggle('mt-4');
+    });
+</script>
+    <script>
+        // ✅ Swiper initialization with autoplay
+        const swiper = new Swiper('.slider-wrapper', {
+            loop: true,
+            grabCursor: true,
+            spaceBetween: 25,
+
+            autoplay: {
+                delay: 2500, // Slide every 2.5s
+                disableOnInteraction: false, // Keep autoplay after manual swipe
+            },
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                dynamicBullets: true,
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            breakpoints: {
+                0: {
+                    slidesPerView: 1
+                },
+                768: {
+                    slidesPerView: 2
+                },
+                1024: {
+                    slidesPerView: 3
+                }
+            }
+        });
+
+        // ✅ Scroll animation trigger
+        const section = document.querySelector('.member-section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    section.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.2 });
+
+        observer.observe(section);
+    </script>
+
+
+    <script>
+        // --- SCRIPT FOR LOADER ---
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('loader');
+            setTimeout(() => {
+                loader.classList.add('hidden');
+            }, 500);
+        });
+
+        // --- INTERACTIVE CANVAS SCRIPT ---
+        const canvas = document.getElementById("interactiveCanvas");
+        const ctx = canvas.getContext("2d");
+        let particles = [];
+        let mouse = { x: null, y: null };
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        window.addEventListener("resize", resizeCanvas);
+
+        function createParticle(x, y) {
+            return {
+                x: x,
+                y: y,
+                vx: (Math.random() - 0.5) * 2,
+                vy: (Math.random() - 0.5) * 2,
+                size: Math.random() * 5 + 2,
+                color: `hsl(${Math.random() * 60 + 20}, 70%, 60%)`,
+                life: 1,
+                decay: Math.random() * 0.02 + 0.005,
+            };
+        }
+
+        function updateParticles() {
+            for (let i = particles.length - 1; i >= 0; i--) {
+                const p = particles[i];
+                p.x += p.vx;
+                p.y += p.vy;
+                p.life -= p.decay;
+                p.size *= 0.98;
+                if (p.life <= 0 || p.size <= 0.5) {
+                    particles.splice(i, 1);
+                }
+            }
+        }
+
+        function drawParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach((p) => {
+                ctx.save();
+                ctx.globalAlpha = p.life;
+                ctx.fillStyle = p.color;
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+                ctx.fill();
+                ctx.shadowBlur = 20;
+                ctx.shadowColor = p.color;
+                ctx.fill();
+                ctx.restore();
+            });
+        }
+
+        function animate() {
+            updateParticles();
+            drawParticles();
+            requestAnimationFrame(animate);
+        }
+
+        canvas.addEventListener("mousemove", (e) => {
+            if (Math.random() > 0.7) {
+                particles.push(createParticle(e.clientX, e.clientY));
+            }
+        });
+
+        canvas.addEventListener("click", (e) => {
+            for (let i = 0; i < 15; i++) {
+                particles.push(createParticle(e.clientX, e.clientY));
+            }
+        });
+
+        // Initialize
+        resizeCanvas();
+        animate();
+    </script>
+
+    <script>
+        // --- CONTACT FORM SCRIPT ---
+        const form = document.getElementById("contact-form");
+        const status = document.getElementById("form-status");
+
+        async function handleSubmit(event) {
+            event.preventDefault();
+            const data = new FormData(event.target);
+
+            try {
+                const response = await fetch(event.target.action, {
+                    method: form.method,
+                    body: data,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    status.innerHTML = "Thanks for your message!";
+                    status.style.color = "#4CAF50"; // Green for success
+                    form.reset();
+                } else {
+                    const responseData = await response.json();
+                    if (Object.hasOwn(responseData, 'errors')) {
+                        status.innerHTML = responseData["errors"].map(error => error["message"]).join(", ");
+                    } else {
+                        status.innerHTML = "Oops! There was a problem submitting your form.";
+                    }
+                    status.style.color = "red";
+                }
+            } catch (error) {
+                status.innerHTML = "Oops! There was a network error.";
+                status.style.color = "red";
+            }
+        }
+        form.addEventListener("submit", handleSubmit);
+    </script>
+    <!-- Remove jQuery + Bootstrap 4 scripts -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+
+    <!-- ✅ Use Bootstrap 5 bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
