@@ -8,9 +8,9 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.72.0">
     <title>INSPIRA 2025 - About Us</title>
-   <?php include 'assets/includes/css-links-inc.php'; ?>
+    <?php include 'assets/includes/css-links-inc.php'; ?>
     <!-- Custom Styles -->
-     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body class="animated-gradient text-white overflow-x-hidden">
@@ -73,144 +73,144 @@
 
     <section class="py-5 ">
         <h1 class="text-center section-title">Event Schedule</h1>
-<div class="d-flex justify-content-center my-4">
-  <button type="button" class="btn btn-outline-warning btn-lg rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleModalLong">
-    View Event Schedule
-  </button>
-</div>
+        <div class="d-flex justify-content-center my-4">
+            <button type="button" class="btn btn-outline-warning btn-lg rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleModalLong">
+                View Event Schedule
+            </button>
+        </div>
 
-<div class="modal fade  " id="exampleModalLong" tabindex="-1" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-    <div class="modal-content glass-effect">
-      <div class="animated-gradient modal-body">
-        <h2 class="text-center section-title">Event Schedule</h2>
-         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <div class="tab-content" id="scheduleTabContent">
-                <div class="mt-12 space-y-8">
-                <div class="fade-in-up flex flex-col md:flex-row items-center gap-4 bg-white/10 backdrop-blur-sm p-6 rounded-2xl text-left" style="animation-delay: 0.4s;">
-                    <div class="w-full md:w-1/4 text-center md:text-right border-b-2 md:border-b-0 md:border-r-2 border-orange-400/50 pb-4 md:pb-0 md:pr-6">
-                        <p class="text-3xl font-bold text-orange-400">09:00 <span class="text-xl font-semibold">AM</span></p>
-                        <p class="text-sm text-gray-300">IST</p>
-                    </div>
-                    <div class="flex-1 text-center md:text-left">
-                        <h3 class="text-2xl font-bold">Registration & Login</h3>
-                        <p class="text-gray-300 mt-1">Join the Zoom room, test your audio and video.</p>
-                    </div>
-                </div>
+        <div class="modal fade  " id="exampleModalLong" tabindex="-1" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content glass-effect">
+                    <div class="animated-gradient modal-body">
+                        <h2 class="text-center section-title">Event Schedule</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="tab-content" id="scheduleTabContent">
+                            <div class="mt-12 space-y-8">
+                                <div class="fade-in-up flex flex-col md:flex-row items-center gap-4 bg-white/10 backdrop-blur-sm p-6 rounded-2xl text-left" style="animation-delay: 0.4s;">
+                                    <div class="w-full md:w-1/4 text-center md:text-right border-b-2 md:border-b-0 md:border-r-2 border-orange-400/50 pb-4 md:pb-0 md:pr-6">
+                                        <p class="text-3xl font-bold text-orange-400">09:00 <span class="text-xl font-semibold">AM</span></p>
+                                        <p class="text-sm text-gray-300">IST</p>
+                                    </div>
+                                    <div class="flex-1 text-center md:text-left">
+                                        <h3 class="text-2xl font-bold">Registration & Login</h3>
+                                        <p class="text-gray-300 mt-1">Join the Zoom room, test your audio and video.</p>
+                                    </div>
+                                </div>
 
-                <div class="fade-in-up flex flex-col md:flex-row items-center gap-4 bg-white/10 backdrop-blur-sm p-6 rounded-2xl text-left" style="animation-delay: 0.6s;">
-                    <div class="w-full md:w-1/4 text-center md:text-right border-b-2 md:border-b-0 md:border-r-2 border-orange-400/50 pb-4 md:pb-0 md:pr-6">
-                        <p class="text-3xl font-bold text-orange-400">09:30 <span class="text-xl font-semibold">AM</span></p>
-                        <p class="text-sm text-gray-300">IST</p>
-                    </div>
-                    <div class="flex-1 text-center md:text-left">
-                        <h3 class="text-2xl font-bold">Opening Ceremony</h3>
-                        <p class="text-gray-300 mt-1">Welcome speech & show briefing.</p>
-                    </div>
-                </div>
-                
-                <div class="fade-in-up flex flex-col md:flex-row items-center gap-4 bg-white/10 backdrop-blur-sm p-6 rounded-2xl text-left" style="animation-delay: 0.8s;">
-                    <div class="w-full md:w-1/4 text-center md:text-right border-b-2 md:border-b-0 md:border-r-2 border-orange-400/50 pb-4 md:pb-0 md:pr-6">
-                        <p class="text-3xl font-bold text-orange-400">10:00 <span class="text-xl font-semibold">AM</span></p>
-                        <p class="text-sm text-gray-300">IST</p>
-                    </div>
-                    <div class="flex-1 text-center md:text-left">
-                        <h3 class="text-2xl font-bold">Round 1 – Solo Talents</h3>
-                        <p class="text-gray-300 mt-1">Music, monologue, dance, and more.</p>
-                    </div>
-                </div>
+                                <div class="fade-in-up flex flex-col md:flex-row items-center gap-4 bg-white/10 backdrop-blur-sm p-6 rounded-2xl text-left" style="animation-delay: 0.6s;">
+                                    <div class="w-full md:w-1/4 text-center md:text-right border-b-2 md:border-b-0 md:border-r-2 border-orange-400/50 pb-4 md:pb-0 md:pr-6">
+                                        <p class="text-3xl font-bold text-orange-400">09:30 <span class="text-xl font-semibold">AM</span></p>
+                                        <p class="text-sm text-gray-300">IST</p>
+                                    </div>
+                                    <div class="flex-1 text-center md:text-left">
+                                        <h3 class="text-2xl font-bold">Opening Ceremony</h3>
+                                        <p class="text-gray-300 mt-1">Welcome speech & show briefing.</p>
+                                    </div>
+                                </div>
 
-                <div class="fade-in-up flex flex-col md:flex-row items-center gap-4 bg-white/5 backdrop-blur-sm p-6 rounded-2xl text-left" style="animation-delay: 1.0s;">
-                    <div class="w-full md:w-1/4 text-center md:text-right border-b-2 md:border-b-0 md:border-r-2 border-gray-500/50 pb-4 md:pb-0 md:pr-6">
-                        <p class="text-3xl font-bold text-gray-400">12:00 <span class="text-xl font-semibold">PM</span></p>
-                    </div>
-                    <div class="flex-1 text-center md:text-left">
-                        <h3 class="text-2xl font-bold text-gray-300">Break</h3>
-                        <p class="text-gray-400 mt-1">Virtual networking & chill room.</p>
-                    </div>
-                </div>
+                                <div class="fade-in-up flex flex-col md:flex-row items-center gap-4 bg-white/10 backdrop-blur-sm p-6 rounded-2xl text-left" style="animation-delay: 0.8s;">
+                                    <div class="w-full md:w-1/4 text-center md:text-right border-b-2 md:border-b-0 md:border-r-2 border-orange-400/50 pb-4 md:pb-0 md:pr-6">
+                                        <p class="text-3xl font-bold text-orange-400">10:00 <span class="text-xl font-semibold">AM</span></p>
+                                        <p class="text-sm text-gray-300">IST</p>
+                                    </div>
+                                    <div class="flex-1 text-center md:text-left">
+                                        <h3 class="text-2xl font-bold">Round 1 – Solo Talents</h3>
+                                        <p class="text-gray-300 mt-1">Music, monologue, dance, and more.</p>
+                                    </div>
+                                </div>
 
-                <div class="fade-in-up flex flex-col md:flex-row items-center gap-4 bg-white/10 backdrop-blur-sm p-6 rounded-2xl text-left" style="animation-delay: 1.2s;">
-                    <div class="w-full md:w-1/4 text-center md:text-right border-b-2 md:border-b-0 md:border-r-2 border-orange-400/50 pb-4 md:pb-0 md:pr-6">
-                        <p class="text-3xl font-bold text-orange-400">01:00 <span class="text-xl font-semibold">PM</span></p>
-                        <p class="text-sm text-gray-300">IST</p>
-                    </div>
-                    <div class="flex-1 text-center md:text-left">
-                        <h3 class="text-2xl font-bold">Round 2 – Group Performances</h3>
-                        <p class="text-gray-300 mt-1">Duets, band acts, drama, etc.</p>
-                    </div>
-                </div>
+                                <div class="fade-in-up flex flex-col md:flex-row items-center gap-4 bg-white/5 backdrop-blur-sm p-6 rounded-2xl text-left" style="animation-delay: 1.0s;">
+                                    <div class="w-full md:w-1/4 text-center md:text-right border-b-2 md:border-b-0 md:border-r-2 border-gray-500/50 pb-4 md:pb-0 md:pr-6">
+                                        <p class="text-3xl font-bold text-gray-400">12:00 <span class="text-xl font-semibold">PM</span></p>
+                                    </div>
+                                    <div class="flex-1 text-center md:text-left">
+                                        <h3 class="text-2xl font-bold text-gray-300">Break</h3>
+                                        <p class="text-gray-400 mt-1">Virtual networking & chill room.</p>
+                                    </div>
+                                </div>
 
-                <div class="fade-in-up flex flex-col md:flex-row items-center gap-4 bg-white/10 backdrop-blur-sm p-6 rounded-2xl text-left" style="animation-delay: 1.4s;">
-                    <div class="w-full md:w-1/4 text-center md:text-right border-b-2 md:border-b-0 md:border-r-2 border-orange-400/50 pb-4 md:pb-0 md:pr-6">
-                        <p class="text-3xl font-bold text-orange-400">02:30 <span class="text-xl font-semibold">PM</span></p>
-                        <p class="text-sm text-gray-300">IST</p>
-                    </div>
-                    <div class="flex-1 text-center md:text-left">
-                        <h3 class="text-2xl font-bold">Audience Interaction</h3>
-                        <p class="text-gray-300 mt-1">Live poll, quiz, and audience shoutouts.</p>
-                    </div>
-                </div>
-                
-                 <div class="fade-in-up flex flex-col md:flex-row items-center gap-4 bg-white/10 backdrop-blur-sm p-6 rounded-2xl text-left" style="animation-delay: 1.6s;">
-                    <div class="w-full md:w-1/4 text-center md:text-right border-b-2 md:border-b-0 md:border-r-2 border-orange-400/50 pb-4 md:pb-0 md:pr-6">
-                        <p class="text-3xl font-bold text-orange-400">03:00 <span class="text-xl font-semibold">PM</span></p>
-                        <p class="text-sm text-gray-300">IST</p>
-                    </div>
-                    <div class="flex-1 text-center md:text-left">
-                        <h3 class="text-2xl font-bold">Special Acts</h3>
-                        <p class="text-gray-300 mt-1">Spoken word, magic, and other creative talents.</p>
-                    </div>
-                </div>
+                                <div class="fade-in-up flex flex-col md:flex-row items-center gap-4 bg-white/10 backdrop-blur-sm p-6 rounded-2xl text-left" style="animation-delay: 1.2s;">
+                                    <div class="w-full md:w-1/4 text-center md:text-right border-b-2 md:border-b-0 md:border-r-2 border-orange-400/50 pb-4 md:pb-0 md:pr-6">
+                                        <p class="text-3xl font-bold text-orange-400">01:00 <span class="text-xl font-semibold">PM</span></p>
+                                        <p class="text-sm text-gray-300">IST</p>
+                                    </div>
+                                    <div class="flex-1 text-center md:text-left">
+                                        <h3 class="text-2xl font-bold">Round 2 – Group Performances</h3>
+                                        <p class="text-gray-300 mt-1">Duets, band acts, drama, etc.</p>
+                                    </div>
+                                </div>
 
-                <div class="fade-in-up flex flex-col md:flex-row items-center gap-4 bg-white/5 backdrop-blur-sm p-6 rounded-2xl text-left" style="animation-delay: 1.8s;">
-                    <div class="w-full md:w-1/4 text-center md:text-right border-b-2 md:border-b-0 md:border-r-2 border-gray-500/50 pb-4 md:pb-0 md:pr-6">
-                        <p class="text-3xl font-bold text-gray-400">04:30 <span class="text-xl font-semibold">PM</span></p>
-                    </div>
-                    <div class="flex-1 text-center md:text-left">
-                        <h3 class="text-2xl font-bold text-gray-300">Break + Fun Room</h3>
-                        <p class="text-gray-400 mt-1">Casual games and Q&A with performers.</p>
+                                <div class="fade-in-up flex flex-col md:flex-row items-center gap-4 bg-white/10 backdrop-blur-sm p-6 rounded-2xl text-left" style="animation-delay: 1.4s;">
+                                    <div class="w-full md:w-1/4 text-center md:text-right border-b-2 md:border-b-0 md:border-r-2 border-orange-400/50 pb-4 md:pb-0 md:pr-6">
+                                        <p class="text-3xl font-bold text-orange-400">02:30 <span class="text-xl font-semibold">PM</span></p>
+                                        <p class="text-sm text-gray-300">IST</p>
+                                    </div>
+                                    <div class="flex-1 text-center md:text-left">
+                                        <h3 class="text-2xl font-bold">Audience Interaction</h3>
+                                        <p class="text-gray-300 mt-1">Live poll, quiz, and audience shoutouts.</p>
+                                    </div>
+                                </div>
+
+                                <div class="fade-in-up flex flex-col md:flex-row items-center gap-4 bg-white/10 backdrop-blur-sm p-6 rounded-2xl text-left" style="animation-delay: 1.6s;">
+                                    <div class="w-full md:w-1/4 text-center md:text-right border-b-2 md:border-b-0 md:border-r-2 border-orange-400/50 pb-4 md:pb-0 md:pr-6">
+                                        <p class="text-3xl font-bold text-orange-400">03:00 <span class="text-xl font-semibold">PM</span></p>
+                                        <p class="text-sm text-gray-300">IST</p>
+                                    </div>
+                                    <div class="flex-1 text-center md:text-left">
+                                        <h3 class="text-2xl font-bold">Special Acts</h3>
+                                        <p class="text-gray-300 mt-1">Spoken word, magic, and other creative talents.</p>
+                                    </div>
+                                </div>
+
+                                <div class="fade-in-up flex flex-col md:flex-row items-center gap-4 bg-white/5 backdrop-blur-sm p-6 rounded-2xl text-left" style="animation-delay: 1.8s;">
+                                    <div class="w-full md:w-1/4 text-center md:text-right border-b-2 md:border-b-0 md:border-r-2 border-gray-500/50 pb-4 md:pb-0 md:pr-6">
+                                        <p class="text-3xl font-bold text-gray-400">04:30 <span class="text-xl font-semibold">PM</span></p>
+                                    </div>
+                                    <div class="flex-1 text-center md:text-left">
+                                        <h3 class="text-2xl font-bold text-gray-300">Break + Fun Room</h3>
+                                        <p class="text-gray-400 mt-1">Casual games and Q&A with performers.</p>
+                                    </div>
+                                </div>
+
+                                <div class="fade-in-up flex flex-col md:flex-row items-center gap-4 bg-white/10 backdrop-blur-sm p-6 rounded-2xl text-left" style="animation-delay: 2.0s;">
+                                    <div class="w-full md:w-1/4 text-center md:text-right border-b-2 md:border-b-0 md:border-r-2 border-orange-400/50 pb-4 md:pb-0 md:pr-6">
+                                        <p class="text-3xl font-bold text-orange-400">05:00 <span class="text-xl font-semibold">PM</span></p>
+                                        <p class="text-sm text-gray-300">IST</p>
+                                    </div>
+                                    <div class="flex-1 text-center md:text-left">
+                                        <h3 class="text-2xl font-bold">Awards & Recognition</h3>
+                                        <p class="text-gray-300 mt-1">Winners announcement and thank you notes.</p>
+                                    </div>
+                                </div>
+
+                                <div class="fade-in-up flex flex-col md:flex-row items-center gap-4 bg-white/10 backdrop-blur-sm p-6 rounded-2xl text-left" style="animation-delay: 2.2s;">
+                                    <div class="w-full md:w-1/4 text-center md:text-right border-b-2 md:border-b-0 md:border-r-2 border-orange-400/50 pb-4 md:pb-0 md:pr-6">
+                                        <p class="text-3xl font-bold text-orange-400">05:30 <span class="text-xl font-semibold">PM</span></p>
+                                        <p class="text-sm text-gray-300">IST</p>
+                                    </div>
+                                    <div class="flex-1 text-center md:text-left">
+                                        <h3 class="text-2xl font-bold">Closing Remarks</h3>
+                                        <p class="text-gray-300 mt-1">Group photo (screenshot) and farewell.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="d-flex justify-content-center my-4">
+                                <button type="button" class="btn btn-outline-warning" data-bs-dismiss="modal">Close</button>
+                            </div>
+
+
+
+
+                        </div>
                     </div>
                 </div>
-
-                <div class="fade-in-up flex flex-col md:flex-row items-center gap-4 bg-white/10 backdrop-blur-sm p-6 rounded-2xl text-left" style="animation-delay: 2.0s;">
-                    <div class="w-full md:w-1/4 text-center md:text-right border-b-2 md:border-b-0 md:border-r-2 border-orange-400/50 pb-4 md:pb-0 md:pr-6">
-                        <p class="text-3xl font-bold text-orange-400">05:00 <span class="text-xl font-semibold">PM</span></p>
-                        <p class="text-sm text-gray-300">IST</p>
-                    </div>
-                    <div class="flex-1 text-center md:text-left">
-                        <h3 class="text-2xl font-bold">Awards & Recognition</h3>
-                        <p class="text-gray-300 mt-1">Winners announcement and thank you notes.</p>
-                    </div>
-                </div>
-
-                <div class="fade-in-up flex flex-col md:flex-row items-center gap-4 bg-white/10 backdrop-blur-sm p-6 rounded-2xl text-left" style="animation-delay: 2.2s;">
-                    <div class="w-full md:w-1/4 text-center md:text-right border-b-2 md:border-b-0 md:border-r-2 border-orange-400/50 pb-4 md:pb-0 md:pr-6">
-                        <p class="text-3xl font-bold text-orange-400">05:30 <span class="text-xl font-semibold">PM</span></p>
-                        <p class="text-sm text-gray-300">IST</p>
-                    </div>
-                    <div class="flex-1 text-center md:text-left">
-                        <h3 class="text-2xl font-bold">Closing Remarks</h3>
-                        <p class="text-gray-300 mt-1">Group photo (screenshot) and farewell.</p>
-                    </div>
-                </div>
-
             </div>
-                
-      <div class="d-flex justify-content-center my-4">
- <button type="button" class="btn btn-outline-warning" data-bs-dismiss="modal">Close</button>
-</div>
-        
-        
-        
-      
-    </div>
-  </div>
-</div>
-    </div>
-    </div>  
-    
-</section>
+        </div>
+
+    </section>
     <section class="member-section">
         <div class="container">
             <h2 class="text-center section-title">Organizing committee</h2>
@@ -274,7 +274,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="text-center mt-5">
                 <a href="members.php" class="btn btn-outline-warning btn-lg rounded-pill px-4">View Full Committee</a>
             </div>
@@ -306,10 +306,11 @@
         </div>
     </section>
 
-   <?php include 'assets/includes/footer.php'; ?>
+    <?php include 'assets/includes/footer.php'; ?>
     <canvas id="interactiveCanvas" class="fixed top-0 left-0 w-full h-full pointer-events-none z-0"></canvas>
-    <?php include 'assets/includes/js-links-inc.php';?>
+    <?php include 'assets/includes/js-links-inc.php'; ?>
 
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
