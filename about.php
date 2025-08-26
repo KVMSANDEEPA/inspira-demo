@@ -276,7 +276,7 @@
             </div>
             
             <div class="text-center mt-5">
-                <a href="members.html" class="btn btn-outline-warning btn-lg rounded-pill px-4">View Full Committee</a>
+                <a href="members.php" class="btn btn-outline-warning btn-lg rounded-pill px-4">View Full Committee</a>
             </div>
         </div>
     </section>
