@@ -19,49 +19,314 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
-    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        :root {
+            --color-primary: #874C1B;
+            --color-secondary: #6B2E2E;
+            --color-background-dark: #541C1C;
+            --color-accent: #F28C1A;
+            --color-text-light: #e0e0e0;
+            --color-text-heading: #ffffff;
+            --font-family-base: 'Poppins', sans-serif;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-family-base);
+            color: var(--color-text-light);
+            background: linear-gradient(-45deg, var(--color-background-dark), var(--color-secondary), var(--color-primary), var(--color-background-dark));
+            background-size: 400% 400%;
+            animation: gradient-animation 15s ease infinite;
+            min-height: 100vh;
+        }
+
+        @keyframes gradient-animation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #F28C1A; /* Accent color on hover */
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            display: block;
+            margin-top: 5px;
+            right: 0;
+            background: #F28C1A;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+            left: 0;
+        }
+
+        /* Main Content */
+        main {
+            padding-top: 120px; /* Added padding to prevent overlap with fixed header */
+        }
+        
+        .team-section {
+            padding: 6rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--color-text-heading);
+            margin-bottom: 1rem;
+            text-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            color: #c2c2c2;
+            margin-bottom: 4rem;
+            font-size: 1.1rem;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            justify-content: center;
+        }
+        
+        
+        .dev-card {
+            background: rgba(194, 194, 194, 0.15);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .dev-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 16px 40px 0 rgba(0, 0, 0, 0.4);
+        }
+        
+        .dev-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(242, 140, 26, 0.2), transparent 40%);
+            transform: scale(0);
+            transition: transform 0.6s ease-out;
+            z-index: 0;
+            opacity: 0;
+        }
+
+        .dev-card:hover::before {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        .dev-card-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .dev-card__image {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--color-accent);
+            margin: 0 auto 1.5rem;
+            box-shadow: 0 0 20px rgba(242, 140, 26, 0.4);
+            transition: transform 0.3s ease;
+        }
+
+        .dev-card:hover .dev-card__image {
+            transform: scale(1.05);
+        }
+
+        .dev-card__name {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--color-text-heading);
+            margin-bottom: 0.5rem;
+        }
+
+        .dev-card__role {
+            color: var(--color-accent);
+            font-weight: 500;
+            margin-bottom: 0.25rem;
+        }
+
+        .dev-card__secondary-role {
+            color: var(--color-text-light);
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .dev-card__socials {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .dev-card__socials a {
+            color: var(--color-text-light);
+            font-size: 1.5rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .dev-card__socials a:hover {
+            color: var(--color-accent);
+            transform: scale(1.2);
+        }
+
+        /* Footer */
+        .site-footer {
+            background: rgba(84, 28, 28, 0.5);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 3rem 0;
+            text-align: center;
+            margin-top: 4rem;
+        }
+        
+        .footer-content h3 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: var(--color-text-heading);
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-content p {
+            margin-bottom: 0.75rem;
+        }
+        
+        .footer-content a {
+            color: var(--color-text-light);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-content a:hover {
+            color: var(--color-accent);
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .footer-bottom a {
+            color: yellow;
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .team-grid {
+                grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .logo-text { font-size: 1.25rem; }
+            .section-title { font-size: 2.25rem; }
+        }
+        
+        @media (max-width: 576px) {
+            .logo-text {
+                display: none; /* Hide logo text on very small screens */
+            }
+            .team-section {
+                padding: 4rem 0;
+            }
+             .dev-card {
+                padding: 2rem 1rem;
+            }
+            .dev-card__image {
+                width: 110px;
+                height: 110px;
+            }
+            .dev-card__name {
+                font-size: 1.25rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
      
-   <header class="site-header bg-primary-800/50 backdrop-blur-md border-b border-white/10">
-  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-    <!-- Logo -->
-    <a href="index.html" class="flex items-center gap-3">
-      <img src="assets/img/logo2.jpg" class="h-12 w-12 rounded-full object-cover border-2 border-orange-400 p-1">
-      <span class="font-bold text-xl hidden sm:block text-white">INSPIRA '25</span>
-    </a>
+   <header class="fixed top-2 sm:top-4 left-1/2 -translate-x-1/2 w-[96%] max-w-7xl rounded-2xl z-50 bg-[#541C1C]/60 backdrop-blur-lg border border-white/10">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="assets/img/logo2.jpg" class="h-12 w-12 rounded-full object-cover border-2 border-orange-400 p-1">
+                <span class="font-bold text-xl hidden sm:block text-white">INSPIRA '25</span>
+            </a>
 
-    <!-- Hamburger / Close Button for mobile -->
-    <button id="nav-toggle" class="sm:hidden text-white focus:outline-none">
-      <!-- Hamburger icon -->
-      <svg id="hamburger" class="h-8 w-8 block" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
-      </svg>
-      <!-- Close icon -->
-      <svg id="close" class="h-8 w-8 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
-      </svg>
-    </button>
+            <button id="nav-toggle" class="sm:hidden text-white focus:outline-none">
+                <svg id="hamburger" class="h-8 w-8 block" fill="none" stroke="currentColor" stroke-width="2"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <svg id="close" class="h-8 w-8 hidden" fill="none" stroke="currentColor" stroke-width="2"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
 
-    <!-- Desktop Navigation -->
-    <nav id="nav-menu" class="hidden sm:flex space-x-8 items-center">
-      <a href="index.html" class="nav-link font-semibold text-orange-400 hover:text-white transition">Home</a>
-      <a href="about.html" class="nav-link font-semibold text-white hover:text-orange-400 transition">About</a>
-      <a href="ticket.html" class="nav-link font-semibold text-white hover:text-orange-400 transition">Get Ticket</a>
-      <a href="#" class="nav-link font-semibold text-white hover:text-orange-400 transition">Schedule</a>
-    </nav>
-  </div>
+            <nav id="nav-menu" class="hidden sm:flex space-x-8 items-center">
+                <a href="index.html" class="nav-link font-semibold text-orange-400 hover:text-white transition">Home</a>
+                <a href="about.html" class="nav-link font-semibold text-white hover:text-orange-400 transition">About</a>
+                <a href="ticket.html" class="nav-link font-semibold text-white hover:text-orange-400 transition">Get Ticket</a>
+                <a href="#" class="nav-link font-semibold text-white hover:text-orange-400 transition">Schedule</a>
+            </nav>
+        </div>
 
-  <!-- Mobile Navigation -->
-  <nav id="nav-menu-mobile" class="sm:hidden hidden px-6 pb-4 space-y-2 bg-primary-800/50 backdrop-blur-md border-t border-white/10 rounded-b-lg">
-    <a href="index.html" class="block font-semibold text-orange-400 hover:text-white transition">Home</a>
-    <a href="about.html" class="block font-semibold text-white hover:text-orange-400 transition">About</a>
-    <a href="ticket.html" class="block font-semibold text-white hover:text-orange-400 transition">Get Ticket</a>
-    <a href="#" class="block font-semibold text-white hover:text-orange-400 transition">Schedule</a>
-  </nav>
-</header>
+        <nav id="nav-menu-mobile" class="sm:hidden hidden bg-[#541C1C]/60 backdrop-blur-lg px-6 pb-4 space-y-2 rounded-b-2xl">
+            <a href="index.html" class="block py-2 font-semibold text-orange-400 hover:text-white transition">Home</a>
+            <a href="about.html" class="block py-2 font-semibold text-white hover:text-orange-400 transition">About</a>
+            <a href="ticket.html" class="block py-2 font-semibold text-white hover:text-orange-400 transition">Get Ticket</a>
+            <a href="#" class="block py-2 font-semibold text-white hover:text-orange-400 transition">Schedule</a>
+        </nav>
+    </header>
     <main>
         <section class="team-section">
             <div class="container">
@@ -132,6 +397,22 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="dev-card">
+                        <div class="dev-card-content">
+                            <img src="assets/img/developers/7.PNG" alt="Randika Subash" class="dev-card__image">
+                            <h3 class="dev-card__name">Ravindu Dulakshan</h3>
+                            <p class="dev-card__role">Frontend Developer</p>
+                            <p class="dev-card__secondary-role">System Administrator</p>
+                            <div class="dev-card__socials">
+                                <a href="#" target="_blank" aria-label="Website"><i class="bi bi-globe"></i></a>
+                                <a href="https://github.com/ravydu" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                                <a href="https://www.linkedin.com/in/ravindu-dulakshan-25359a345?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                                <a href="https://www.facebook.com/share/1CMCBLqW6t/?mibextid=wwXIfr" target="_blank" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                                <a href="mailto:ravydu000@gmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
                     
                     <div class="dev-card">
                         <div class="dev-card-content">
@@ -153,10 +434,7 @@
                             <p class="dev-card__role">UI Designer</p>
                             <p class="dev-card__secondary-role">Quality Assurance</p>
                             <div class="dev-card__socials">
-                                <!--<a href="https://networkchukka.github.io/site/" target="_blank" aria-label="Website"><i class="bi bi-globe"></i></a>-->
                                 <a href="https://github.com/Samudisavindya" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
-                                <!--<a href="https://www.linkedin.com/in/randikasubash" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                                <a href="https://www.facebook.com/randikasubash1015" target="_blank" aria-label="Facebook"><i class="bi bi-facebook"></i></a>-->
                                 <a href="mailto:samudiabeywickrama@gmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
                             </div>
                         </div>
@@ -180,6 +458,17 @@
             </div>
         </div>
     </footer>
-    <script src="assets/js/utils.js"></script>
+<script>
+    const toggleButton = document.getElementById('nav-toggle');
+    const mobileMenu = document.getElementById('nav-menu-mobile');
+    const hamburgerIcon = document.getElementById('hamburger');
+    const closeIcon = document.getElementById('close');
+
+    toggleButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        hamburgerIcon.classList.toggle('hidden');
+        closeIcon.classList.toggle('hidden');
+    });
+</script>
 </body>
 </html>
