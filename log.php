@@ -6,37 +6,63 @@ require 'PHPMailer/src/Exception.php';
 require 'PHPMailer/src/PHPMailer.php';
 require 'PHPMailer/src/SMTP.php';
 
-$ip        = $_SERVER['REMOTE_ADDR'];
-$userAgent = $_SERVER['HTTP_USER_AGENT'];
-$time      = date(format: "Y-m-d H:i:s");
-$action    = $_POST['action'] ?? 'Unknown Action';
-$page      = $_POST['page'] ?? 'Unknown Page';
-$referrer  = $_POST['referrer'] ?? 'Unknown Referrer';
-$screen    = $_POST['screen'] ?? 'Unknown Screen';
-$coords    = $_POST['coords'] ?? 'Unknown Coordinates';
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $ip        = $_SERVER['REMOTE_ADDR']; 
+    $userAgent = $_SERVER['HTTP_USER_AGENT'];
+    $time      = date("Y-m-d H:i:s");
+    $page      = $_POST['page']   ?? 'Unknown';
+    $screen    = $_POST['screen'] ?? 'Unknown';
+    $action    = $_POST['action'] ?? 'Unknown';
 
-$logEntry = "[$time] IP: $ip | Agent: $userAgent | Page: $page | Referrer: $referrer | Screen: $screen | Coords: $coords | Action: $action\n";
-file_put_contents(filename: "inspect_log.txt", data: $logEntry, flags: FILE_APPEND);
+    $data = "[$time] 
+IP: $ip 
+Agent: $userAgent 
+Page: $page 
+Screen: $screen 
+Action: $action\n\n";
 
-$mail = new PHPMailer(exceptions: true);
-try {
-    $mail->isSMTP();
-    $mail->Host       = 'mail.inspira.x10.mx';            // your SMTP server
-    $mail->SMTPAuth   = true;
-    $mail->Username   = 'rjt@inspira.x10.mx';    // your site email
-    $mail->Password   = '#';
-    $mail->SMTPSecure = 'ssl';                          // or 'ssl'
-    $mail->Port       = 465;                            // or 465 for ssl
+    // Log into file
+    file_put_contents("inspect_log.txt", $data, FILE_APPEND);
 
-    $mail->setFrom(address: 'rjt@inspira.x10.mx', name: 'Inspira Security');
-    $mail->addAddress(address: 'malithsandeepa1081@gmail.com');
-    $mail->Subject = 'Suspicious Activity Detected!';
-    $mail->Body    = $logEntry;
+    // === Email notification ===
+    $mail = new PHPMailer(true);
 
-    $mail->send();
-} catch (Exception $e) {
-    error_log(message: "Mail Error: {$mail->ErrorInfo}");
+    try {
+        $mail->isSMTP();
+        $mail->Host       = '#';  // ✅ your SMTP server
+        $mail->SMTPAuth   = true;
+        $mail->Username   = '#';   // ✅ your email
+        $mail->Password   = '#';          // ✅ your password
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // safer than "tls"
+        $mail->Port       = 587;                    // try 465 with PHPMailer::ENCRYPTION_SMTPS if fails
+
+        // Debugging (0 = off | 2 = full debug)
+        $mail->SMTPDebug  = 0;
+        $mail->Debugoutput = 'html';
+
+        $mail->setFrom('#', 'Security Bot');
+        $mail->addAddress('#'); // ✅ recipient
+
+        $mail->isHTML(true);
+        $mail->Subject = "⚠ Security Alert: Inspect Attempt";
+        $mail->Body    = nl2br($data);
+        $mail->AltBody = $data; // fallback for non-HTML clients
+
+        $mail->send();
+        echo "✅ Logged and Email Sent";
+    } catch (Exception $e) {
+        // Fallback: PHP mail()
+        $to      = "#";
+        $subject = "⚠ Security Alert (Fallback)";
+        $headers = "From: #\r\n";
+        $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+
+        if (mail($to, $subject, $data, $headers)) {
+            echo "⚠ Logged, SMTP Failed but mail() Sent";
+        } else {
+            echo "❌ Logged, but Email Failed: " . $mail->ErrorInfo;
+        }
+    }
 }
 ?>
-
 
