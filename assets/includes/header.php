@@ -3,7 +3,7 @@
         <img src="assets/img/logo.png" alt="Loading Logo" class="loader-logo">
     </div>
 <!-- ======= Header ======= -->
-    <header class="fixed top-2 sm:top-4 left-1/2 -translate-x-1/2 w-[96%] max-w-7xl rounded-2xl z-50 bg-[#541C1C]/60 backdrop-blur-lg border border-white/10">
+   <header class="fixed top-2 sm:top-4 left-1/2 -translate-x-1/2 w-[96%] max-w-7xl rounded-2xl z-50 bg-[#541C1C]/60 backdrop-blur-lg border border-white/10">
         <div class="container mx-auto px-6 py-3 flex justify-between items-center">
             <a href="index.html" class="flex items-center gap-3">
                 <img src="assets/img/logo2.jpg" class="h-12 w-12 rounded-full object-cover border-2 border-orange-400 p-1">
@@ -22,17 +22,17 @@
             </button>
 
             <nav id="nav-menu" class="hidden sm:flex space-x-8 items-center">
-                <a href="index.php" class="nav-link font-semibold text-orange-400 hover:text-white transition">Home</a>
-                <a href="about.php" class="nav-link font-semibold text-white hover:text-orange-400 transition">About</a>
-                <a href="ticket.php" class="nav-link font-semibold text-white hover:text-orange-400 transition">Get Ticket</a>
+                <a href="index.html" class="nav-link font-semibold text-orange-400 hover:text-white transition">Home</a>
+                <a href="about.html" class="nav-link font-semibold text-white hover:text-orange-400 transition">About</a>
+                <a href="ticket.html" class="nav-link font-semibold text-white hover:text-orange-400 transition">Get Ticket</a>
                 <a href="#" class="nav-link font-semibold text-white hover:text-orange-400 transition">Schedule</a>
             </nav>
         </div>
 
-        <nav id="nav-menu-mobile" class="sm:hidden hidden px-6 pb-4 space-y-2 rounded-b-2xl">
-            <a href="index.php" class="block py-2 font-semibold text-orange-400 hover:text-white transition">Home</a>
-            <a href="about.php" class="block py-2 font-semibold text-white hover:text-orange-400 transition">About</a>
-            <a href="ticket.php" class="block py-2 font-semibold text-white hover:text-orange-400 transition">Get Ticket</a>
+        <nav id="nav-menu-mobile" class="sm:hidden hidden bg-[#541C1C]/60 backdrop-blur-lg px-6 pb-4 space-y-2 rounded-b-2xl">
+            <a href="index.html" class="block py-2 font-semibold text-orange-400 hover:text-white transition">Home</a>
+            <a href="about.html" class="block py-2 font-semibold text-white hover:text-orange-400 transition">About</a>
+            <a href="ticket.html" class="block py-2 font-semibold text-white hover:text-orange-400 transition">Get Ticket</a>
             <a href="#" class="block py-2 font-semibold text-white hover:text-orange-400 transition">Schedule</a>
         </nav>
     </header>

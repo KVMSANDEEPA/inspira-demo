@@ -36,11 +36,11 @@
                                 <h5>Randika Udayanga</h5>
                                 <p class="text-primary mb-1">Event Cordinator</p>
                                 
-                                <div class="d-flex">
+                                <!-- <div class="d-flex">
                                     <a href="#" class="text-dark me-3"><i class="fab fa-twitter"></i></a>
                                     <a href="#" class="text-dark me-3"><i class="fab fa-linkedin"></i></a>
                                     <a href="#" class="text-dark"><i class="fas fa-globe"></i></a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -54,11 +54,11 @@
                             <div class="p-4">
                                 <h5>Pramodha Vikum</h5>
                                 <p class="text-primary mb-1">Assistant Event Coordinator</p>
-                                <div class="d-flex">
+                                <!-- <div class="d-flex">
                                     <a href="#" class="text-dark me-3"><i class="fab fa-twitter"></i></a>
                                     <a href="#" class="text-dark me-3"><i class="fab fa-linkedin"></i></a>
                                     <a href="#" class="text-dark"><i class="fas fa-globe"></i></a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -70,11 +70,11 @@
                             <div class="p-4">
                                 <h5>Navod Sankalpa</h5>
                                 <p class="text-primary mb-1">Finance & Budget Coordinator</p>
-                                <div class="d-flex">
+                                <!-- <div class="d-flex">
                                     <a href="#" class="text-dark me-3"><i class="fab fa-twitter"></i></a>
                                     <a href="#" class="text-dark me-3"><i class="fab fa-linkedin"></i></a>
                                     <a href="#" class="text-dark"><i class="fas fa-globe"></i></a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -88,11 +88,11 @@
                             <div class="p-4">
                                 <h5>Janidu Senarathna</h5>
                                 <p class="text-primary mb-1">Technical Team Lead</p>
-                                <div class="d-flex">
+                                <!-- <div class="d-flex">
                                     <a href="#" class="text-dark me-3"><i class="fab fa-twitter"></i></a>
                                     <a href="#" class="text-dark me-3"><i class="fab fa-linkedin"></i></a>
                                     <a href="#" class="text-dark"><i class="fas fa-globe"></i></a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -103,11 +103,11 @@
                             <div class="p-4">
                                 <h5>Sanjana Jayarathne</h5>
                                 <p class="text-primary mb-1">Creative & Media Team Lead</p>
-                                <div class="d-flex">
+                                <!-- <div class="d-flex">
                                     <a href="#" class="text-dark me-3"><i class="fab fa-twitter"></i></a>
                                     <a href="#" class="text-dark me-3"><i class="fab fa-linkedin"></i></a>
                                     <a href="#" class="text-dark"><i class="fas fa-globe"></i></a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -118,11 +118,11 @@
                             <div class="p-4">   
                                 <h5>Chathura Jayamal</h5>
                                 <p class="text-primary mb-1">PR & Social Media Lead</p>
-                                <div class="d-flex">
+                                <!-- <div class="d-flex">
                                     <a href="#" class="text-dark me-3"><i class="fab fa-twitter"></i></a>
                                     <a href="#" class="text-dark me-3"><i class="fab fa-linkedin"></i></a>
                                     <a href="#" class="text-dark"><i class="fas fa-globe"></i></a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -136,11 +136,11 @@
                             <div class="p-4">
                                 <h5>Nivisadi<br> De Silva</h5>
                                 <p class="text-primary mb-1">Documentation Lead</p>
-                                <div class="d-flex">
+                                <!-- <div class="d-flex">
                                     <a href="#" class="text-dark me-3"><i class="fab fa-twitter"></i></a>
                                     <a href="#" class="text-dark me-3"><i class="fab fa-linkedin"></i></a>
                                     <a href="#" class="text-dark"><i class="fas fa-globe"></i></a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -151,11 +151,11 @@
                             <div class="p-4">
                                 <h5>Heshani <br> Sharala</h5>
                                 <p class="text-primary mb-1">Content & Script Lead</p>
-                                <div class="d-flex">
+                                <!-- <div class="d-flex">
                                     <a href="#" class="text-dark me-3"><i class="fab fa-twitter"></i></a>
                                     <a href="#" class="text-dark me-3"><i class="fab fa-linkedin"></i></a>
                                     <a href="#" class="text-dark"><i class="fas fa-globe"></i></a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -166,11 +166,11 @@
                             <div class="p-4">
                                 <h5>Ahinsa <br> Madushika</h5>
                                 <p class="text-primary mb-1">Dancing Coordinator</p>
-                                <div class="d-flex">
+                                <!-- <div class="d-flex">
                                     <a href="#" class="text-dark me-3"><i class="fab fa-twitter"></i></a>
                                     <a href="#" class="text-dark me-3"><i class="fab fa-linkedin"></i></a>
                                     <a href="#" class="text-dark"><i class="fas fa-globe"></i></a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -181,11 +181,11 @@
                             <div class="p-4">
                                 <h5>Shenal <br>Chanaka</h5>
                                 <p class="text-primary mb-1">Singing Coordinator</p>
-                                <div class="d-flex">
+                                <!-- <div class="d-flex">
                                     <a href="#" class="text-dark me-3"><i class="fab fa-twitter"></i></a>
                                     <a href="#" class="text-dark me-3"><i class="fab fa-linkedin"></i></a>
                                     <a href="#" class="text-dark"><i class="fas fa-globe"></i></a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -196,11 +196,11 @@
                             <div class="p-4">
                                 <h5>Dilhara <br> Sewwandi</h5>
                                 <p class="text-primary mb-1">Art & Craft Coordinator</p>
-                                <div class="d-flex">
+                                <!-- <div class="d-flex">
                                     <a href="#" class="text-dark me-3"><i class="fab fa-twitter"></i></a>
                                     <a href="#" class="text-dark me-3"><i class="fab fa-linkedin"></i></a>
                                     <a href="#" class="text-dark"><i class="fas fa-globe"></i></a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -213,11 +213,11 @@
                             <div class="p-4">
                                 <h5>Akindu <br> Dulwan</h5>
                                 <p class="text-primary mb-1">Drama Coordinator</p>
-                                <div class="d-flex">
+                                <!-- <div class="d-flex">
                                     <a href="#" class="text-dark me-3"><i class="fab fa-twitter"></i></a>
                                     <a href="#" class="text-dark me-3"><i class="fab fa-linkedin"></i></a>
                                     <a href="#" class="text-dark"><i class="fas fa-globe"></i></a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -227,60 +227,108 @@
                             <img src="assets\img\Org\ASB_2024_093 - Gayangi Kaveesha.png" alt="Male business leader in a smart casual outfit gesturing during a presentation" class="img-fluid">
                             <div class="p-4">
                                 <h5>Gayangi <br> Kaveesha</h5>
-                                <p class="text-primary mb-1">Speaking & Announcing Coordinator</p>
-                                <div class="d-flex">
+                                <p class="text-primary mb-1">Announcing Coordinator</p>
+                                <!-- <div class="d-flex">
                                     <a href="#" class="text-dark me-3"><i class="fab fa-twitter"></i></a>
                                     <a href="#" class="text-dark me-3"><i class="fab fa-linkedin"></i></a>
                                     <a href="#" class="text-dark"><i class="fas fa-globe"></i></a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
                     <!-- member 14 -->
                     <div class="col-md-6 col-lg-2">
                         <div class="speaker-card ">
-                            <img src="https://placehold.co/400x300" alt="Male business leader in a smart casual outfit gesturing during a presentation" class="img-fluid">
+                            <img src="assets\img\Org\ASB_2024_116 - Krishnamoorthi Krishani.png" alt="Male business leader in a smart casual outfit gesturing during a presentation" class="img-fluid">
                             <div class="p-4">
-                                <h5>David Kim</h5>
-                                <p class="text-primary mb-1">Vice President</p>
-                                <div class="d-flex">
+                                <h5>Krishnamoorthi <br> Krishani</h5>
+                                <p class="text-primary mb-1">Commitee Member</p>
+                                <!-- <div class="d-flex">
                                     <a href="#" class="text-dark me-3"><i class="fab fa-twitter"></i></a>
                                     <a href="#" class="text-dark me-3"><i class="fab fa-linkedin"></i></a>
                                     <a href="#" class="text-dark"><i class="fas fa-globe"></i></a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
                     <!-- member 15 -->
                     <div class="col-md-6 col-lg-2">
                         <div class="speaker-card ">
-                            <img src="https://placehold.co/400x300" alt="Male business leader in a smart casual outfit gesturing during a presentation" class="img-fluid">
+                            <img src="assets\img\Org\ASB_2024_056 - Sulani Nawodya.png" alt="Male business leader in a smart casual outfit gesturing during a presentation" class="img-fluid">
                             <div class="p-4">
-                                <h5>David Kim</h5>
-                                <p class="text-primary mb-1">Vice President</p>
-                                <div class="d-flex">
+                                <h5>Sulani <br>Nawodya</h5>
+                                <p class="text-primary mb-1">Commitee Member</p>
+                                <!-- <div class="d-flex">
                                     <a href="#" class="text-dark me-3"><i class="fab fa-twitter"></i></a>
                                     <a href="#" class="text-dark me-3"><i class="fab fa-linkedin"></i></a>
                                     <a href="#" class="text-dark"><i class="fas fa-globe"></i></a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
                     <!-- member 16 -->
                     <div class="col-md-6 col-lg-2">
                         <div class="speaker-card ">
-                            <img src="https://placehold.co/400x300" alt="Male business leader in a smart casual outfit gesturing during a presentation" class="img-fluid">
+                            <img src="assets\img\Org\ASB_2024_005 - Isuri Amanda.png" alt="Male business leader in a smart casual outfit gesturing during a presentation" class="img-fluid">
                             <div class="p-4">
-                                <h5>David Kim</h5>
-                                <p class="text-primary mb-1">Vice President</p>
-                                <div class="d-flex">
+                                <h5>Isuri <br>Amanda</h5>
+                                <p class="text-primary mb-1">Commitee Member</p>
+                                <!-- <div class="d-flex">
                                     <a href="#" class="text-dark me-3"><i class="fab fa-twitter"></i></a>
                                     <a href="#" class="text-dark me-3"><i class="fab fa-linkedin"></i></a>
                                     <a href="#" class="text-dark"><i class="fas fa-globe"></i></a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="row justify-content-center">
+                    <!-- member 12 -->
+                    <div class="col-md-6 col-lg-2">
+                        <div class="speaker-card ">
+                            <img src="assets\img\Org\ASB_2024_063 - Dilmini Anjalika.png" alt="Male business leader in a smart casual outfit gesturing during a presentation" class="img-fluid">
+                            <div class="p-4">
+                                <h5>Dilmini <br> Anjalika</h5>
+                                <p class="text-primary mb-1">Commitee Member</p>
+                                <!-- <div class="d-flex">
+                                    <a href="#" class="text-dark me-3"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="text-dark me-3"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#" class="text-dark"><i class="fas fa-globe"></i></a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- member 13 -->
+                    <div class="col-md-6 col-lg-2">
+                        <div class="speaker-card ">
+                            <img src="assets\img\Org\ASB_2024_100 - Chathunika Jayamini.png" alt="Male business leader in a smart casual outfit gesturing during a presentation" class="img-fluid">
+                            <div class="p-4">
+                                <h5>Chathunika <br>Jayamini</h5>
+                                <p class="text-primary mb-1">Commitee Member</p>
+                                <!-- <div class="d-flex">
+                                    <a href="#" class="text-dark me-3"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="text-dark me-3"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#" class="text-dark"><i class="fas fa-globe"></i></a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- member 14 -->
+                    <div class="col-md-6 col-lg-2">
+                        <div class="speaker-card ">
+                            <img src="assets\img\Org\HPT_2024_058 - Akindu Thisen.png" alt="Male business leader in a smart casual outfit gesturing during a presentation" class="img-fluid">
+                            <div class="p-4">
+                                <h5>Akindu <br> Thisen</h5>
+                                <p class="text-primary mb-1">Commitee Member</p>
+                                <!-- <div class="d-flex">
+                                    <a href="#" class="text-dark me-3"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="text-dark me-3"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#" class="text-dark"><i class="fas fa-globe"></i></a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
             
