@@ -51,7 +51,7 @@
                             <p class="text-xs text-gray-300">FAS, Rajarata University Of Sri Lanka.</p>
                         </div>
                         <div class="text-right">
-                             <img src="assets/img/logo2.jpg" class="h-16 w-16 rounded-full object-cover border-2 border-orange-300 p-1" onerror="this.onerror=null;this.src='https://placehold.co/64x64/FFFFFF/541C1C?text=I25';">
+                             <img src="assets/img/logo2.webp" class="h-16 w-16 rounded-full object-cover border-2 border-orange-300 p-1" onerror="this.onerror=null;this.src='https://placehold.co/64x64/FFFFFF/541C1C?text=I25';">
                         </div>
                     </div>
                     <div class="mt-8">

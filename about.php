@@ -41,7 +41,7 @@
             <h1 class="text-center section-title">About The Event</h1>
             <div class="row g-4 align-items-center">
                 <div class="col-lg-6 col-md-12">
-                    <img src="assets/img/gptimg600800.jpg" height="600" width="800"
+                    <img src="assets/img/gptimg600800.webp" height="600" width="800"
                         alt="Modern conference center" class="img-fluid rounded shadow-lg">
                 </div>
                 <div class="col-lg-6 col-md-12">
@@ -74,9 +74,10 @@
     <section class="py-5 ">
         <h1 class="text-center section-title">Event Schedule</h1>
         <div class="d-flex justify-content-center my-4">
-            <button type="button" class="btn btn-outline-warning btn-lg rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleModalLong">
+            <!-- <button type="button" class="btn btn-outline-warning btn-lg rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleModalLong">
                 View Event Schedule
-            </button>
+            </button> -->
+            <a href="update.php" class="btn btn-outline-warning btn-lg rounded-pill px-4">Event Schedule</a>
         </div>
 
         <div class="modal fade  " id="exampleModalLong" tabindex="-1" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
@@ -211,7 +212,7 @@
         </div>
 
     </section>
-    <section class="member-section">
+<section class="member-section">
         <div class="container">
             <h2 class="text-center section-title">Organizing committee</h2>
             <div class="section-content">
@@ -219,49 +220,49 @@
                     <div class="slider-wrapper">
                         <ui class="member-list swiper-wrapper">
                             <li class="member swiper-slide">
-                                <img src="assets\img\Org\ASP_2024_079 - Randika Subash.png" alt="User"
+                                <img src="assets\img\Org\ASP_2024_079 - Randika Subash.webp" alt="User"
                                     class="user-image">
                                 <h3 class="name">Randika Udayanga</h3>
                                 <i class="post">Overall Event Coordinator</i>
                             </li>
                             <li class="member swiper-slide">
-                                <img src="assets\img\Org\ICT_2024_130 - Pamodha Vikum.png" alt="User"
+                                <img src="assets\img\Org\ICT_2024_130 - Pamodha Vikum.webp" alt="User"
                                     class="user-image">
                                 <h3 class="name">Pramodha Vikum</h3>
                                 <i class="post">Assistant Event Coordinator</i>
                             </li>
                             <li class="member swiper-slide">
-                                <img src="assets\img\Org\HPT_2024_046 - Navod Sankalpa.png" alt="User"
+                                <img src="assets\img\Org\HPT_2024_046 - Navod Sankalpa.webp" alt="User"
                                     class="user-image">
                                 <h3 class="name">Navod Sankalpa</h3>
                                 <i class="post">Finance & Budget Coordinator</i>
                             </li>
                             <li class="member swiper-slide">
-                                <img src="assets\img\Org\ASP_2024_065 - Janidu Senarathna.png" alt="User"
+                                <img src="assets\img\Org\ASP_2024_065 - Janidu Senarathna.webp" alt="User"
                                     class="user-image">
                                 <h3 class="name">Janidu Senarathna</h3>
                                 <i class="post">Technical Team Lead</i>
                             </li>
                             <li class="member swiper-slide">
-                                <img src="assets\img\Org\ASP_2024_100 - Sanjana Jayarathna.png" alt="User"
+                                <img src="assets\img\Org\ASP_2024_100 - Sanjana Jayarathna.webp" alt="User"
                                     class="user-image">
                                 <h3 class="name">Sanjana Jayarathne</h3>
                                 <i class="post">Creative & Media Team Lead</i>
                             </li>
                             <li class="member swiper-slide">
-                                <img src="assets\img\Org\ASP_2024_059 - Chathura Ravihansa.png" alt="User"
+                                <img src="assets\img\Org\ASP_2024_059 - Chathura Ravihansa.webp" alt="User"
                                     class="user-image">
                                 <h3 class="name">Chathura Jayamal</h3>
                                 <i class="post">Promotion, PR & Social Media Lead</i>
                             </li>
                             <li class="member swiper-slide">
-                                <img src="assets\img\Org\ICT_2024_025 - Nivisadi De Silva.png" alt="User"
+                                <img src="assets\img\Org\ICT_2024_025 - Nivisadi De Silva.webp" alt="User"
                                     class="user-image">
                                 <h3 class="name">Nivisadi De Silva</h3>
                                 <i class="post">Documentation Lead</i>
                             </li>
                             <li class="member swiper-slide">
-                                <img src="assets\img\Org\ASB_2024_111 - Heshani Sharala.png" alt="User"
+                                <img src="assets\img\Org\ASB_2024_111 - Heshani Sharala.webp" alt="User"
                                     class="user-image">
                                 <h3 class="name">Heshani Sharala</h3>
                                 <i class="post">Content & Script Lead</i>
@@ -274,7 +275,7 @@
                     </div>
                 </div>
             </div>
-
+            
             <div class="text-center mt-5">
                 <a href="members.php" class="btn btn-outline-warning btn-lg rounded-pill px-4">View Full Committee</a>
             </div>

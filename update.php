@@ -6,52 +6,8 @@
     <title>Update Soon! - INSPIRA 2025</title>
     
     <!-- Tailwind CSS for styling -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Google Fonts: Poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
-
-    <style>
-        /* Using the Poppins font family */
-        body {
-            font-family: 'Poppins', sans-serif;
-        }
-
-        /* Animated gradient background from the main page */
-        .animated-gradient {
-            background: linear-gradient(-45deg, #541C1C, #6B2E2E, #874C1B, #541C1C);
-            background-size: 600% 600%;
-            animation: waveFlag 20s ease infinite;
-        }
-
-        @keyframes waveFlag {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
-        /* Keyframes for fade-in animation */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .fade-in {
-            animation: fadeIn 1s ease-out forwards;
-        }
-        
-        /* Glow effect for the button */
-        .glow-button {
-            transition: all 0.3s ease;
-            box-shadow: 0 0 5px rgba(242, 140, 26, 0.3), 0 0 10px rgba(242, 140, 26, 0.2);
-        }
-        .glow-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 0 15px rgba(242, 140, 26, 0.6), 0 0 25px rgba(242, 140, 26, 0.4);
-        }
-    </style>
+<?php include 'assets/includes/css-links-inc.php'; ?>    
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="animated-gradient text-white overflow-x-hidden">
 

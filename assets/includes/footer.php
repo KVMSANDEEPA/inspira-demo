@@ -37,7 +37,7 @@
       <p>
         <small>
           Developed By 
-          <a href="developers.html" style="text-decoration: underline; color: yellow;">
+          <a href="developers.php" style="text-decoration: underline; color: yellow;">
             Team INSPIRA
           </a>
         </small>

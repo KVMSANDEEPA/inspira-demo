@@ -23,7 +23,7 @@
     </div>
 
    
-        <section id="speakers" class="py-5">
+         <section id="speakers" class="py-5">
         <div class="container">
             <h2 class="text-center section-title">Organizing committee</h2>            
             <div class="row g-4">
@@ -31,7 +31,7 @@
                     <!-- member 1 -->
                     <div class="col-md-6 col-lg-3" id="member1">
                         <div class="speaker-card ">
-                            <img src="assets\img\Org\ASP_2024_079 - Randika Subash.png" class="img-fluid">
+                            <img src="assets\img\Org\ASP_2024_079 - Randika Subash.webp" class="img-fluid">
                             <div class="p-4">
                                 <h5>Randika Udayanga</h5>
                                 <p class="text-primary mb-1">Event Cordinator</p>
@@ -50,7 +50,7 @@
                     <!-- member 2 -->
                     <div class="col-md-6 col-lg-4">
                         <div class="speaker-card " id="member2">
-                            <img src="assets\img\Org\ICT_2024_130 - Pamodha Vikum.png" class="img-fluid">
+                            <img src="assets\img\Org\ICT_2024_130 - Pamodha Vikum.webp" class="img-fluid">
                             <div class="p-4">
                                 <h5>Pramodha Vikum</h5>
                                 <p class="text-primary mb-1">Assistant Event Coordinator</p>
@@ -66,7 +66,7 @@
                     <!-- member 3 -->
                     <div class="col-md-6 col-lg-4" id="member3">
                         <div class="speaker-card">
-                            <img src="assets\img\Org\HPT_2024_046 - Navod Sankalpa.png" alt="Diverse woman in creative attire presenting data visualization on a screen" class="img-fluid">
+                            <img src="assets\img\Org\HPT_2024_046 - Navod Sankalpa.webp" alt="Diverse woman in creative attire presenting data visualization on a screen" class="img-fluid">
                             <div class="p-4">
                                 <h5>Navod Sankalpa</h5>
                                 <p class="text-primary mb-1">Finance & Budget Coordinator</p>
@@ -84,7 +84,7 @@
                     <!-- member 4 -->
                     <div class="col-md-6 col-lg-3">
                         <div class="speaker-card ">
-                            <img src="assets\img\Org\ASP_2024_065 - Janidu Senarathna.png" alt="Male business leader in a smart casual outfit gesturing during a presentation" class="img-fluid">
+                            <img src="assets\img\Org\ASP_2024_065 - Janidu Senarathna.webp" alt="Male business leader in a smart casual outfit gesturing during a presentation" class="img-fluid">
                             <div class="p-4">
                                 <h5>Janidu Senarathna</h5>
                                 <p class="text-primary mb-1">Technical Team Lead</p>
@@ -99,7 +99,7 @@
                     <!-- member 5 -->
                     <div class="col-md-6 col-lg-3">
                         <div class="speaker-card ">
-                            <img src="assets\img\Org\ASP_2024_100 - Sanjana Jayarathna.png" alt="Male business leader in a smart casual outfit gesturing during a presentation" class="img-fluid">
+                            <img src="assets\img\Org\ASP_2024_100 - Sanjana Jayarathna.webp" alt="Male business leader in a smart casual outfit gesturing during a presentation" class="img-fluid">
                             <div class="p-4">
                                 <h5>Sanjana Jayarathne</h5>
                                 <p class="text-primary mb-1">Creative & Media Team Lead</p>
@@ -114,7 +114,7 @@
                     <!-- member 6 -->
                     <div class="col-md-6 col-lg-3">
                         <div class="speaker-card ">
-                            <img src="assets\img\Org\ASP_2024_059 - Chathura Ravihansa.png" alt="" class="img-fluid">
+                            <img src="assets\img\Org\ASP_2024_059 - Chathura Ravihansa.webp" alt="" class="img-fluid">
                             <div class="p-4">   
                                 <h5>Chathura Jayamal</h5>
                                 <p class="text-primary mb-1">PR & Social Media Lead</p>
@@ -132,7 +132,7 @@
                     <!-- member 7 -->
                     <div class="col-md-6 col-lg-2">
                         <div class="speaker-card ">
-                            <img src="assets\img\Org\ICT_2024_025 - Nivisadi De Silva.png" alt="Male business leader in a smart casual outfit gesturing during a presentation" class="img-fluid">
+                            <img src="assets\img\Org\ICT_2024_025 - Nivisadi De Silva.webp" alt="Male business leader in a smart casual outfit gesturing during a presentation" class="img-fluid">
                             <div class="p-4">
                                 <h5>Nivisadi<br> De Silva</h5>
                                 <p class="text-primary mb-1">Documentation Lead</p>
@@ -147,7 +147,7 @@
                     <!-- member 8 -->
                     <div class="col-md-6 col-lg-2">
                         <div class="speaker-card ">
-                            <img src="assets\img\Org\ASB_2024_111 - Heshani Sharala.png" alt="Male business leader in a smart casual outfit gesturing during a presentation" class="img-fluid">
+                            <img src="assets\img\Org\ASB_2024_111 - Heshani Sharala.webp" alt="Male business leader in a smart casual outfit gesturing during a presentation" class="img-fluid">
                             <div class="p-4">
                                 <h5>Heshani <br> Sharala</h5>
                                 <p class="text-primary mb-1">Content & Script Lead</p>
@@ -162,7 +162,7 @@
                     <!-- member 9 -->
                     <div class="col-md-6 col-lg-2">
                         <div class="speaker-card ">
-                            <img src="assets\img\Org\ASP_2024_071 - Ahinsa Madushika.png" alt="Male business leader in a smart casual outfit gesturing during a presentation" class="img-fluid">
+                            <img src="assets\img\Org\ASP_2024_071 - Ahinsa Madushika.webp" alt="Male business leader in a smart casual outfit gesturing during a presentation" class="img-fluid">
                             <div class="p-4">
                                 <h5>Ahinsa <br> Madushika</h5>
                                 <p class="text-primary mb-1">Dancing Coordinator</p>
@@ -177,7 +177,7 @@
                     <!-- member 10 -->
                     <div class="col-md-6 col-lg-2">
                         <div class="speaker-card ">
-                            <img src="assets\img\Org\ASP_2024_016 - Shenal Chanaka.png" alt="Male business leader in a smart casual outfit gesturing during a presentation" class="img-fluid">
+                            <img src="assets\img\Org\ASP_2024_016 - Shenal Chanaka.webp" alt="Male business leader in a smart casual outfit gesturing during a presentation" class="img-fluid">
                             <div class="p-4">
                                 <h5>Shenal <br>Chanaka</h5>
                                 <p class="text-primary mb-1">Singing Coordinator</p>
@@ -192,7 +192,7 @@
                     <!-- member 11 -->
                     <div class="col-md-6 col-lg-2">
                         <div class="speaker-card ">
-                            <img src="assets\img\Org\HPT_2024_041 - Dilhara Sewwandi.png" alt="Male business leader in a smart casual outfit gesturing during a presentation" class="img-fluid">
+                            <img src="assets\img\Org\HPT_2024_041 - Dilhara Sewwandi.webp" alt="Male business leader in a smart casual outfit gesturing during a presentation" class="img-fluid">
                             <div class="p-4">
                                 <h5>Dilhara <br> Sewwandi</h5>
                                 <p class="text-primary mb-1">Art & Craft Coordinator</p>
@@ -209,7 +209,7 @@
                     <!-- member 12 -->
                     <div class="col-md-6 col-lg-2">
                         <div class="speaker-card ">
-                            <img src="assets\img\Org\ICT_2024_060 - Akindu Dulwan.png" alt="Male business leader in a smart casual outfit gesturing during a presentation" class="img-fluid">
+                            <img src="assets\img\Org\ICT_2024_060 - Akindu Dulwan.webp" alt="Male business leader in a smart casual outfit gesturing during a presentation" class="img-fluid">
                             <div class="p-4">
                                 <h5>Akindu <br> Dulwan</h5>
                                 <p class="text-primary mb-1">Drama Coordinator</p>
@@ -224,7 +224,7 @@
                     <!-- member 13 -->
                     <div class="col-md-6 col-lg-2">
                         <div class="speaker-card ">
-                            <img src="assets\img\Org\ASB_2024_093 - Gayangi Kaveesha.png" alt="Male business leader in a smart casual outfit gesturing during a presentation" class="img-fluid">
+                            <img src="assets\img\Org\ASB_2024_093 - Gayangi Kaveesha.webp" alt="Male business leader in a smart casual outfit gesturing during a presentation" class="img-fluid">
                             <div class="p-4">
                                 <h5>Gayangi <br> Kaveesha</h5>
                                 <p class="text-primary mb-1">Announcing Coordinator</p>
@@ -239,7 +239,7 @@
                     <!-- member 14 -->
                     <div class="col-md-6 col-lg-2">
                         <div class="speaker-card ">
-                            <img src="assets\img\Org\ASB_2024_116 - Krishnamoorthi Krishani.png" alt="Male business leader in a smart casual outfit gesturing during a presentation" class="img-fluid">
+                            <img src="assets\img\Org\ASB_2024_116 - Krishnamoorthi Krishani.webp" alt="Male business leader in a smart casual outfit gesturing during a presentation" class="img-fluid">
                             <div class="p-4">
                                 <h5>Krishnamoorthi <br> Krishani</h5>
                                 <p class="text-primary mb-1">Commitee Member</p>
@@ -254,7 +254,7 @@
                     <!-- member 15 -->
                     <div class="col-md-6 col-lg-2">
                         <div class="speaker-card ">
-                            <img src="assets\img\Org\ASB_2024_056 - Sulani Nawodya.png" alt="Male business leader in a smart casual outfit gesturing during a presentation" class="img-fluid">
+                            <img src="assets\img\Org\ASB_2024_056 - Sulani Nawodya.webp" alt="Male business leader in a smart casual outfit gesturing during a presentation" class="img-fluid">
                             <div class="p-4">
                                 <h5>Sulani <br>Nawodya</h5>
                                 <p class="text-primary mb-1">Commitee Member</p>
@@ -269,7 +269,7 @@
                     <!-- member 16 -->
                     <div class="col-md-6 col-lg-2">
                         <div class="speaker-card ">
-                            <img src="assets\img\Org\ASB_2024_005 - Isuri Amanda.png" alt="Male business leader in a smart casual outfit gesturing during a presentation" class="img-fluid">
+                            <img src="assets\img\Org\ASB_2024_005 - Isuri Amanda.webp" alt="Male business leader in a smart casual outfit gesturing during a presentation" class="img-fluid">
                             <div class="p-4">
                                 <h5>Isuri <br>Amanda</h5>
                                 <p class="text-primary mb-1">Commitee Member</p>
@@ -286,7 +286,7 @@
                     <!-- member 12 -->
                     <div class="col-md-6 col-lg-2">
                         <div class="speaker-card ">
-                            <img src="assets\img\Org\ASB_2024_063 - Dilmini Anjalika.png" alt="Male business leader in a smart casual outfit gesturing during a presentation" class="img-fluid">
+                            <img src="assets\img\Org\ASB_2024_063 - Dilmini Anjalika.webp" alt="Male business leader in a smart casual outfit gesturing during a presentation" class="img-fluid">
                             <div class="p-4">
                                 <h5>Dilmini <br> Anjalika</h5>
                                 <p class="text-primary mb-1">Commitee Member</p>
@@ -301,7 +301,7 @@
                     <!-- member 13 -->
                     <div class="col-md-6 col-lg-2">
                         <div class="speaker-card ">
-                            <img src="assets\img\Org\ASB_2024_100 - Chathunika Jayamini.png" alt="Male business leader in a smart casual outfit gesturing during a presentation" class="img-fluid">
+                            <img src="assets\img\Org\ASB_2024_100 - Chathunika Jayamini.webp" alt="Male business leader in a smart casual outfit gesturing during a presentation" class="img-fluid">
                             <div class="p-4">
                                 <h5>Chathunika <br>Jayamini</h5>
                                 <p class="text-primary mb-1">Commitee Member</p>
@@ -316,7 +316,7 @@
                     <!-- member 14 -->
                     <div class="col-md-6 col-lg-2">
                         <div class="speaker-card ">
-                            <img src="assets\img\Org\HPT_2024_058 - Akindu Thisen.png" alt="Male business leader in a smart casual outfit gesturing during a presentation" class="img-fluid">
+                            <img src="assets\img\Org\HPT_2024_058 - Akindu Thisen.webp" alt="Male business leader in a smart casual outfit gesturing during a presentation" class="img-fluid">
                             <div class="p-4">
                                 <h5>Akindu <br> Thisen</h5>
                                 <p class="text-primary mb-1">Commitee Member</p>
@@ -328,7 +328,6 @@
                             </div>
                         </div>
                     </div>
-                    
                 </div>
             </div>
             

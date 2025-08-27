@@ -22,7 +22,7 @@
         });
 
         // --- SCRIPT FOR COUNTDOWN ---
-        const countDownDate = new Date("Oct 1, 2025 00:00:00").getTime();
+        const countDownDate = new Date("Oct 7, 2025 12:30:00").getTime();
         const daysEl = document.getElementById("days");
         const hoursEl = document.getElementById("hours");
         const minutesEl = document.getElementById("minutes");

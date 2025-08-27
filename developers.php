@@ -31,7 +31,7 @@
                 <div class="team-grid">
                     <div class="dev-card">
                         <div class="dev-card-content">
-                            <img src="assets/img/developers/2.jpeg" alt="Lahiru Sathsara" class="dev-card__image">
+                            <img src="assets/img/developers/2.webp" alt="Lahiru Sathsara" class="dev-card__image">
                             <h3 class="dev-card__name">Lahiru Sathsara</h3>
                             <p class="dev-card__role">FullStack Developer</p>
                             <p class="dev-card__secondary-role">System Administrator</p>
@@ -47,7 +47,7 @@
 
                     <div class="dev-card">
                         <div class="dev-card-content">
-                            <img src="assets/img/developers/3.jpg" alt="Malith Sandeepa" class="dev-card__image">
+                            <img src="assets/img/developers/3.webp" alt="Malith Sandeepa" class="dev-card__image">
                             <h3 class="dev-card__name">Malith Sandeepa</h3>
                             <p class="dev-card__role">FullStack Developer</p>
                             <p class="dev-card__secondary-role">System Administrator</p>
@@ -63,7 +63,7 @@
 
                     <div class="dev-card">
                         <div class="dev-card-content">
-                            <img src="assets/img/developers/1.jpg" alt="Janidu Senarathna" class="dev-card__image">
+                            <img src="assets/img/developers/1.webp" alt="Janidu Senarathna" class="dev-card__image">
                             <h3 class="dev-card__name">Janidu Senarathna</h3>
                             <p class="dev-card__role">Frontend Developer</p>
                             <p class="dev-card__secondary-role">System Administrator</p>
@@ -79,7 +79,7 @@
 
                     <div class="dev-card">
                         <div class="dev-card-content">
-                            <img src="assets/img/developers/4.jpg" alt="Randika Subash" class="dev-card__image">
+                            <img src="assets/img/developers/4.webp" alt="Randika Subash" class="dev-card__image">
                             <h3 class="dev-card__name">Randika Subash</h3>
                             <p class="dev-card__role">Frontend Developer</p>
                             <p class="dev-card__secondary-role">System Administrator</p>
@@ -95,7 +95,7 @@
 
                     <div class="dev-card">
                         <div class="dev-card-content">
-                            <img src="assets/img/developers/7.PNG" alt="Randika Subash" class="dev-card__image">
+                            <img src="assets/img/developers/7.webp" alt="Randika Subash" class="dev-card__image">
                             <h3 class="dev-card__name">Ravindu Dulakshan</h3>
                             <p class="dev-card__role">Frontend Developer</p>
                             <p class="dev-card__secondary-role">System Administrator</p>
@@ -111,7 +111,7 @@
                     
                     <div class="dev-card">
                         <div class="dev-card-content">
-                            <img src="assets/img/developers/DilminiAnjalika.jpg" alt="Dilmini Anjalika" class="dev-card__image">
+                            <img src="assets/img/developers/DilminiAnjalika.webp" alt="Dilmini Anjalika" class="dev-card__image">
                             <h3 class="dev-card__name">Dilmini Anjalika</h3>
                             <p class="dev-card__role">UI Designer</p>
                             <p class="dev-card__secondary-role">Quality Assurance</p>
@@ -124,7 +124,7 @@
                     </div>
                     <div class="dev-card">
                         <div class="dev-card-content">
-                            <img src="assets/img/developers/6.jpeg" alt="Randika Subash" class="dev-card__image">
+                            <img src="assets/img/developers/6.webp" alt="Randika Subash" class="dev-card__image">
                             <h3 class="dev-card__name">Samudi Abeywickrama</h3>
                             <p class="dev-card__role">UI Designer</p>
                             <p class="dev-card__secondary-role">Quality Assurance</p>
@@ -138,6 +138,7 @@
             </div>
         </section>
     </main>
+
 
     <?php include 'assets/includes/footer.php'; ?>
 <?php include 'assets/includes/js-links-inc.php'; ?>
