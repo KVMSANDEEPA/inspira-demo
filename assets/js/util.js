@@ -1,28 +1,43 @@
-
-// Send suspicious actions to log.php
 function logAction(action) {
-  fetch("../../log.php", {
+  const payload = [
+    `action=${encodeURIComponent(action)}`,
+    `page=${encodeURIComponent(window.location.href)}`,
+    `referrer=${encodeURIComponent(document.referrer || 'Unknown')}`,
+    `screen=${encodeURIComponent(window.innerWidth + 'x' + window.innerHeight)}`,
+    `coords=${encodeURIComponent(window.scrollX + ',' + window.scrollY)}`
+  ].join('&');
+
+  fetch("log.php", {
     method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: "action=" + encodeURIComponent(action)
+    headers: {"Content-Type": "application/x-www-form-urlencoded"},
+    body: payload
   });
 }
 
-// Disable right-click
-document.addEventListener("contextmenu", function (e) {
+document.addEventListener("contextmenu", e => {
   e.preventDefault();
-  alert("Right-click is disabled!");
   logAction("Right Click Attempt");
 });
 
-// Disable inspect shortcuts
-document.onkeydown = function (e) {
-  if (e.key === "F12" || 
-      (e.ctrlKey && e.shiftKey && ["i","j","c"].includes(e.key.toLowerCase())) || 
-      (e.ctrlKey && e.key.toLowerCase() === "u")) {
+document.addEventListener("keydown", e => {
+  if (
+    e.key === "F12" ||
+    (e.ctrlKey && e.shiftKey && ["i","j","c"].includes(e.key.toLowerCase())) ||
+    (e.ctrlKey && e.key.toLowerCase() === "u")
+  ) {
     e.preventDefault();
-    alert("Inspect is disabled!");
-    logAction("Tried Inspect Shortcut: " + e.key);
-    return false;
+    logAction(`Inspect Shortcut: ${e.key}`);
   }
-};
+});
+
+let devtoolsOpen = false;
+const threshold = 160;
+setInterval(() => {
+  const opened = window.outerWidth - window.innerWidth > threshold || window.outerHeight - window.innerHeight > threshold;
+  if (opened && !devtoolsOpen) {
+    devtoolsOpen = true;
+    logAction("DevTools Opened");
+  } else if (!opened) {
+    devtoolsOpen = false;
+  }
+}, 1000);
