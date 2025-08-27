@@ -353,3 +353,4 @@ newTicketBtn.addEventListener('click', function() {
     ticketContainer.classList.add('hidden');
     formContainer.classList.remove('hidden');
 });
+

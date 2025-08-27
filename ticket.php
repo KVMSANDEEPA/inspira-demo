@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BEGR0739BZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BEGR0739BZ');
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get Your Ticket-INSPIRA 2025</title>
@@ -92,7 +101,35 @@
         </div>
 
     </main>
-    
+    <script>
+// Disable right-click
+window.addEventListener('contextmenu', function (e) {
+  e.preventDefault();
+  alert("Came here to Inspect, huh? You little sneaky thief! 🚫");
+}, false);
+
+// Disable shortcuts
+window.addEventListener('keydown', function (e) {
+  if (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J")) {
+    e.preventDefault();
+  }
+  if (e.ctrlKey && e.key.toLowerCase() === "u") {
+    e.preventDefault();
+  }
+});
+
+// Detect DevTools (works for F12 too)
+(function() {
+  let devtools = /./;
+  devtools.toString = function() {
+    // alert("Developer Tools detected! 🚨 No sneaky peeking allowed.");
+    // Optional: redirect or close page
+    // window.location.href = "about:blank";
+  };
+  console.log('%c', devtools);
+})();
+</script>
+
    <?php include 'assets/includes/footer.php'; ?>
     <?php include 'assets/includes/js-links-inc.php'; ?>
     <script src="assets/js/main.js"></script>

@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BEGR0739BZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BEGR0739BZ');
+</script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
@@ -333,10 +342,9 @@
             
             <div class="w-full max-w-2xl mx-auto text-center flex flex-col items-center fade-in">    
                 <div class="mt-12">
-                    <button onclick="goBack()" class="glow-button flex items-center gap-2 bg-[#874C1B] hover:bg-[#6e3d15] text-white font-bold py-3 px-8 rounded-full text-lg">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
-                        Go Back
-                    </button>
+                    <div class="text-center mt-5">
+                <a href="about.php" class="btn btn-outline-warning btn-lg rounded-pill px-4">Go Back</a>
+            </div>
                 </div>
                 </div>
         </div>
@@ -358,5 +366,34 @@
             }, 500); // 500ms delay
         });
         </script>
+        <script>
+// Disable right-click
+window.addEventListener('contextmenu', function (e) {
+  e.preventDefault();
+  alert("Came here to Inspect, huh? You little sneaky thief! 🚫");
+}, false);
+
+// Disable shortcuts
+window.addEventListener('keydown', function (e) {
+  if (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J")) {
+    e.preventDefault();
+  }
+  if (e.ctrlKey && e.key.toLowerCase() === "u") {
+    e.preventDefault();
+  }
+});
+
+// Detect DevTools (works for F12 too)
+(function() {
+  let devtools = /./;
+  devtools.toString = function() {
+    // alert("Developer Tools detected! 🚨 No sneaky peeking allowed.");
+    // Optional: redirect or close page
+    // window.location.href = "about:blank";
+  };
+  console.log('%c', devtools);
+})();
+</script>
+
 </body>
 </html>

@@ -3,6 +3,15 @@
 <html lang="en">
 
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BEGR0739BZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BEGR0739BZ');
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INSPIRA 2025 - The Talent Show</title>
@@ -34,7 +43,7 @@
             </div>
             
             <div class="mt-8">
-                <a href="ticket.html" target="_self" class="glow-button flex items-center gap-2 btn-zoom text-white font-bold py-2 px-5 rounded-full">
+                <a href="update.php" target="_self" class="glow-button flex items-center gap-2 btn-zoom text-white font-bold py-2 px-5 rounded-full">
                 <i class="bi bi-ticket-detailed-fill"></i>
                 <p>Get Your Ticket</p>
                 </a>
@@ -79,10 +88,39 @@
         </main>
         
     </div>
+<script>
+// Disable right-click
+window.addEventListener('contextmenu', function (e) {
+  e.preventDefault();
+  alert("Came here to Inspect, huh? You little sneaky thief! 🚫");
+}, false);
+
+// Disable shortcuts
+window.addEventListener('keydown', function (e) {
+  if (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J")) {
+    e.preventDefault();
+  }
+  if (e.ctrlKey && e.key.toLowerCase() === "u") {
+    e.preventDefault();
+  }
+});
+
+// Detect DevTools (works for F12 too)
+(function() {
+  let devtools = /./;
+  devtools.toString = function() {
+    // alert("Developer Tools detected! 🚨 No sneaky peeking allowed.");
+    // Optional: redirect or close page
+    // window.location.href = "about:blank";
+  };
+  console.log('%c', devtools);
+})();
+</script>
 
     <?php include 'assets/includes/footer.php'; ?>
     <canvas id="interactiveCanvas" class="fixed top-0 left-0 w-full h-full pointer-events-none z-0"></canvas>
-  
+  <script src="assets/js/util.js"></script>
+
 <script src="assets/js/main.js"></script>
 </body>
 
