@@ -52,7 +52,7 @@ Action: $action\n\n";
         echo "✅ Logged and Email Sent";
     } catch (Exception $e) {
         // Fallback: PHP mail()
-        $to      = "#";
+        $to      = "#"; 
         $subject = "⚠ Security Alert (Fallback)";
         $headers = "From: #\r\n";
         $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";

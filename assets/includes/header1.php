@@ -137,7 +137,7 @@
             display: block;
             margin-bottom: 8px;
             font-weight: 600;
-            color: var(--dark);
+            color: var(--light-gray);
         }
 
         .input-group input {
@@ -189,7 +189,7 @@
         }
 
         .download-btn {
-            background: var(--secondary);
+            background: var(--primary);
             display: inline-block;
             margin-top: 15px;
             padding: 10px 20px;
@@ -201,7 +201,7 @@
         }
 
         .download-btn:hover {
-            background: var(--dark);
+            background: var(--primary-dark);
         }
         #welcome-message {
             color: var(--light-gray);
@@ -231,7 +231,7 @@
 
         .logo i {
             font-size: 42px;
-            color: var(--primary);
+            color: var(--dark);
         }
 
         .success-message {

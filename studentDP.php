@@ -22,8 +22,8 @@ include "assets/includes/header1.php";
             </div>
 
             <div class="input-group">
-                <label for="password"><i class="fas fa-lock"></i> Password</label>
-                <input type="password" id="password" placeholder="Enter your password (pin)">
+                <label for="password"><i class="fas fa-lock"></i> Pin Number</label>
+                <input type="password" id="password" placeholder="Enter your pin">
             </div>
 
             <button class="btn" onclick="login()"><i class="fas fa-sign-in-alt"></i> Get My Picture</button>
@@ -55,7 +55,7 @@ include "assets/includes/header1.php";
         <a id="download-link" class="download-btn" href="#" download>
             <i class="fas fa-download"></i> Download Picture
         </a>
-        <button class="back-btn btn " onclick="goBack()"><i class="fas fa-arrow-left"></i> Back to Login</button>
+        <button class="back-btn " onclick="goBack()"><i class="fas fa-arrow-left"></i> Back to Login</button>
     </div>
 </div>
 
