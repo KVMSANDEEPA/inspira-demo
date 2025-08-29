@@ -36,7 +36,7 @@
 
     iframe {
       width: 100%;
-      height: 530px; /* Fallback height */
+      height: 600px; /* Fallback height */
       border: none;
       display: block;
     }
@@ -47,6 +47,50 @@
       color: #FFA500; /* Orange color */
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
     }
+    
+/* Tablet devices (768px - 1024px) */
+@media (max-width: 1024px) {
+  .form-container {
+    max-width: 100%; /* Use full width on tablets */
+    padding: 0 1rem;
+  }
+
+  iframe {
+    height: 1000px; /* shorter height for tablets */
+  }
+
+  .section-title {
+    font-size: 2rem; /* slightly smaller heading */
+  }
+}
+
+/* Mobile devices (up to 767px) */
+@media (max-width: 767px) {
+  .form-container {
+    max-width: 100%;
+    padding: 0 0.5rem; /* add side padding */
+  }
+
+  iframe {
+    height: 900px; /* adjust form height */
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Very small screens (up to 480px) */
+@media (max-width: 480px) {
+  iframe {
+    height: 800px; /* tighter for small screens */
+  }
+
+  .section-title {
+    font-size: 1.4rem;
+  }
+}
 </style>
 </head>
 
