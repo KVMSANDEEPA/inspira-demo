@@ -1,0 +1,14 @@
+[2025-08-29 06:50:10] 
+IP: ::1 
+Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 
+Page: http://localhost:3000/upload.php 
+Screen: 1536x695 
+Action: Right Click Attempt
+
+[2025-08-29 06:50:12] 
+IP: ::1 
+Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36 
+Page: http://localhost:3000/upload.php 
+Screen: 1536x695 
+Action: Right Click Attempt
+
