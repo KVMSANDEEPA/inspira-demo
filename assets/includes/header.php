@@ -2,7 +2,7 @@
         <img src="assets/img/logo.webp" alt="Loading Logo" class="loader-logo">
     </div>
 
-    <header class="fixed top-2 sm:top-4 left-1/2 -translate-x-1/2 w-[96%] max-w-7xl rounded-2xl z-50 bg-[#541C1C]/60 backdrop-blur-lg">
+     <header class="fixed top-2 sm:top-4 left-1/2 -translate-x-1/2 w-[96%] max-w-7xl rounded-2xl z-50 bg-[#541C1C]/60 backdrop-blur-lg">
         <div class="container mx-auto px-6 py-3 flex justify-between items-center">
             <a href="index.php" class="flex items-center gap-3">
                 <img src="assets/img/logo2.webp" class="h-12 w-12 rounded-full object-cover border-2 border-orange-400 p-1">
