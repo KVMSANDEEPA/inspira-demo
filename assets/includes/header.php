@@ -24,7 +24,7 @@
                 <a href="../../index.php" class="nav-link font-semibold text-orange-400 hover:text-white transition">Home</a>
                 <a href="../../about.php" class="nav-link font-semibold text-white hover:text-orange-400 transition">About</a>
                 <a href="../../update.php" class="nav-link font-semibold text-white hover:text-orange-400 transition">Get Ticket</a>
-                <a href="../../update.php" class="nav-link font-semibold text-white hover:text-orange-400 transition">Schedule</a>
+                <a href="../../agenda.php" class="nav-link font-semibold text-white hover:text-orange-400 transition">Schedule</a>
                 <a href="../../upload.php" class="nav-link font-semibold text-white hover:text-orange-400 transition">Registration</a>
             </nav>
         </div>
@@ -33,7 +33,7 @@
             <a href="../../index.php" class="block py-2 font-semibold text-orange-400 hover:text-white transition">Home</a>
             <a href="../../about.php" class="block py-2 font-semibold text-white hover:text-orange-400 transition">About</a>
             <a href="../../update.php" class="block py-2 font-semibold text-white hover:text-orange-400 transition">Get Ticket</a>
-            <a href="../../update.php" class="block py-2 font-semibold text-white hover:text-orange-400 transition">Schedule</a>
+            <a href="../../agenda.php" class="block py-2 font-semibold text-white hover:text-orange-400 transition">Schedule</a>
             <a href="../../upload.php" class="block py-2 font-semibold text-white hover:text-orange-400 transition">Registration</a>
         </nav>
     </header>
