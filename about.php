@@ -92,7 +92,7 @@
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
       <div class="modal-content glass-effect">
         <div class="animated-gradient modal-body">
-          <h2 class="text-center section-title">🎉 INSPIRA 2025 – Final Event Agenda</h2>
+          <h2 class="text-center section-title">INSPIRA 2025 – Event Agenda</h2>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 
           <div class="tab-content" id="scheduleTabContent">
@@ -215,7 +215,7 @@
                   <ul class="text-gray-300 mt-1 list-disc pl-5 text-left">
                     <li>Vice Chancellor’s Speech</li>
                     <li>Free Style Group Dance</li>
-                    <li>“The Unexpected Guest” – Short Drama</li>
+                    <li>“The Last Cycle” – Short Drama</li>
                     <li>Free Style Solo Dance</li>
                     <li>“Freshers' Roast: Online Edition” – Drama</li>
                     <li>“Wavin’ Flag” – Group Song</li>
