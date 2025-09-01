@@ -100,7 +100,7 @@
 
               <!-- Pre-Show -->
               <div class="fade-in-up flex flex-col md:flex-row items-center gap-4 bg-white/10 backdrop-blur-sm p-6 rounded-2xl" style="animation-delay: 0.2s;">
-                <div class="w-full md:w-1/4 text-center md:text-right border-b-2 md:border-b-0 md:border-r-2 border-orange-400/50 pb-4 md:pr-6">
+                <div class="w-full md:w-1/4 text-center md:text-right border-b-4 md:border-b-0 md:border-r-4 border-orange-400/50 pb-4 md:pr-6">
                   <p class="text-3xl font-bold text-orange-400">12:45 <span class="text-xl">PM</span></p>
                   <!-- <p class="text-sm text-gray-300">IST</p> -->
                 </div>
@@ -112,7 +112,7 @@
 
               <!-- Opening Segment -->
               <div class="fade-in-up flex flex-col md:flex-row items-center gap-4 bg-white/10 backdrop-blur-sm p-6 rounded-2xl" style="animation-delay: 0.4s;">
-                <div class="w-full md:w-1/4 text-center md:text-right border-b-2 md:border-b-0 md:border-r-2 border-orange-400/50 pb-4 md:pr-6">
+                <div class="w-full md:w-1/4 text-center md:text-right border-b-4 md:border-b-0 md:border-r-4 border-orange-400/50 pb-4 md:pr-6">
                   <p class="text-3xl font-bold text-orange-400">01:00 <span class="text-xl">PM</span></p>
                 </div>
                 <div class="flex-1 text-center md:text-left">
@@ -131,7 +131,7 @@
 
               <!-- Performance Segment I -->
               <div class="fade-in-up flex flex-col md:flex-row items-center gap-4 bg-white/10 backdrop-blur-sm p-6 rounded-2xl" style="animation-delay: 0.6s;">
-                <div class="w-full md:w-1/4 text-center md:text-right border-b-2 md:border-b-0 md:border-r-2 border-orange-400/50 pb-4 md:pr-6">
+                <div class="w-full md:w-1/4 text-center md:text-right border-b-4 md:border-b-0 md:border-r-4 border-orange-400/50 pb-4 md:pr-6">
                   <p class="text-3xl font-bold text-orange-400">01:26 <span class="text-xl">PM</span></p>
                 </div>
                 <div class="flex-1 text-center md:text-left">
@@ -145,7 +145,7 @@
 
               <!-- Creative Showcase -->
               <div class="fade-in-up flex flex-col md:flex-row items-center gap-4 bg-white/10 backdrop-blur-sm p-6 rounded-2xl" style="animation-delay: 0.8s;">
-                <div class="w-full md:w-1/4 text-center md:text-right border-b-2 md:border-b-0 md:border-r-2 border-orange-400/50 pb-4 md:pr-6">
+                <div class="w-full md:w-1/4 text-center md:text-right border-b-4 md:border-b-0 md:border-r-4 border-orange-400/50 pb-4 md:pr-6">
                   <p class="text-3xl font-bold text-orange-400">01:45 <span class="text-xl">PM</span></p>
                 </div>
                 <div class="flex-1 text-center md:text-left">
@@ -160,7 +160,7 @@
 
               <!-- Art & Expression -->
               <div class="fade-in-up flex flex-col md:flex-row items-center gap-4 bg-white/10 backdrop-blur-sm p-6 rounded-2xl" style="animation-delay: 1.0s;">
-                <div class="w-full md:w-1/4 text-center md:text-right border-b-2 md:border-b-0 md:border-r-2 border-orange-400/50 pb-4 md:pr-6">
+                <div class="w-full md:w-1/4 text-center md:text-right border-b-4 md:border-b-0 md:border-r-4 border-orange-400/50 pb-4 md:pr-6">
                   <p class="text-3xl font-bold text-orange-400">02:05 <span class="text-xl">PM</span></p>
                 </div>
                 <div class="flex-1 text-center md:text-left">
@@ -176,7 +176,7 @@
 
               <!-- Rhythm & Ideas -->
               <div class="fade-in-up flex flex-col md:flex-row items-center gap-4 bg-white/10 backdrop-blur-sm p-6 rounded-2xl" style="animation-delay: 1.2s;">
-                <div class="w-full md:w-1/4 text-center md:text-right border-b-2 md:border-b-0 md:border-r-2 border-orange-400/50 pb-4 md:pr-6">
+                <div class="w-full md:w-1/4 text-center md:text-right border-b-4 md:border-b-0 md:border-r-4 border-orange-400/50 pb-4 md:pr-6">
                   <p class="text-3xl font-bold text-orange-400">02:27 <span class="text-xl">PM</span></p>
                 </div>
                 <div class="flex-1 text-center md:text-left">
@@ -191,7 +191,7 @@
 
               <!-- Mid-Show Highlights -->
               <div class="fade-in-up flex flex-col md:flex-row items-center gap-4 bg-white/10 backdrop-blur-sm p-6 rounded-2xl" style="animation-delay: 1.4s;">
-                <div class="w-full md:w-1/4 text-center md:text-right border-b-2 md:border-b-0 md:border-r-2 border-orange-400/50 pb-4 md:pr-6">
+                <div class="w-full md:w-1/4 text-center md:text-right border-b-4 md:border-b-0 md:border-r-4 border-orange-400/50 pb-4 md:pr-6">
                   <p class="text-3xl font-bold text-orange-400">02:48 <span class="text-xl">PM</span></p>
                 </div>
                 <div class="flex-1 text-center md:text-left">
@@ -207,7 +207,7 @@
 
               <!-- Final Acts -->
               <div class="fade-in-up flex flex-col md:flex-row items-center gap-4 bg-white/10 backdrop-blur-sm p-6 rounded-2xl" style="animation-delay: 1.6s;">
-                <div class="w-full md:w-1/4 text-center md:text-right border-b-2 md:border-b-0 md:border-r-2 border-orange-400/50 pb-4 md:pr-6">
+                <div class="w-full md:w-1/4 text-center md:text-right border-b-4 md:border-b-0 md:border-r-4 border-orange-400/50 pb-4 md:pr-6">
                   <p class="text-3xl font-bold text-orange-400">03:15 <span class="text-xl">PM</span></p>
                 </div>
                 <div class="flex-1 text-center md:text-left">
@@ -229,7 +229,7 @@
 
               <!-- Event End -->
               <div class="fade-in-up flex flex-col md:flex-row items-center gap-4 bg-white/5 backdrop-blur-sm p-6 rounded-2xl" style="animation-delay: 1.8s;">
-                <div class="w-full md:w-1/4 text-center md:text-right border-b-2 md:border-b-0 md:border-r-2 border-orange-400/50 pb-4 md:pr-6">
+                <div class="w-full md:w-1/4 text-center md:text-right border-b-4 md:border-b-0 md:border-r-4 border-orange-400/50 pb-4 md:pr-6">
                   <p class="text-3xl font-bold text-gray-400">04:00 <span class="text-xl">PM</span></p>
                 </div>
                 <div class="flex-1 text-center md:text-left">
