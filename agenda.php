@@ -28,7 +28,7 @@
         
         <main class="w-full max-w-4xl mx-auto text-center">
             <h1 class="text-4xl sm:text-5xl md:text-6xl font-black uppercase tracking-wider fade-in-up" style="text-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-                Show <span style="color: #F28C1A;">Agenda</span>
+                <span style="color: #F28C1A;">Agenda</span>
             </h1>
             <p class="text-lg sm:text-xl font-light mt-2 text-gray-300 fade-in-up" style="animation-delay: 0.2s;">
                 Follow the schedule and don't miss a moment of the magic.
@@ -68,7 +68,7 @@
               <!-- Performance Segment I -->
               <div class="fade-in-up flex flex-col md:flex-row items-center gap-4 bg-white/10 backdrop-blur-sm p-6 rounded-2xl" style="animation-delay: 0.6s;">
                 <div class="w-full md:w-1/4 text-center md:text-right border-b-4 md:border-b-0 md:border-r-4 border-orange-400/50 pb-4 md:pr-6">
-                  <p class="text-3xl font-bold text-orange-400">01:26 <span class="text-xl">PM</span></p>
+                  <p class="text-3xl font-bold text-orange-400">01:30 <span class="text-xl">PM</span></p>
                 </div>
                 <div class="flex-1 text-center md:text-left">
                   <h3 class="text-2xl font-bold">Performance Segment I</h3>
@@ -97,7 +97,7 @@
               <!-- Art & Expression -->
               <div class="fade-in-up flex flex-col md:flex-row items-center gap-4 bg-white/10 backdrop-blur-sm p-6 rounded-2xl" style="animation-delay: 1.0s;">
                 <div class="w-full md:w-1/4 text-center md:text-right border-b-4 md:border-b-0 md:border-r-4 border-orange-400/50 pb-4 md:pr-6">
-                  <p class="text-3xl font-bold text-orange-400">02:05 <span class="text-xl">PM</span></p>
+                  <p class="text-3xl font-bold text-orange-400">02:00 <span class="text-xl">PM</span></p>
                 </div>
                 <div class="flex-1 text-center md:text-left">
                   <h3 class="text-2xl font-bold">Art & Expression</h3>
@@ -113,7 +113,7 @@
               <!-- Rhythm & Ideas -->
               <div class="fade-in-up flex flex-col md:flex-row items-center gap-4 bg-white/10 backdrop-blur-sm p-6 rounded-2xl" style="animation-delay: 1.2s;">
                 <div class="w-full md:w-1/4 text-center md:text-right border-b-4 md:border-b-0 md:border-r-4 border-orange-400/50 pb-4 md:pr-6">
-                  <p class="text-3xl font-bold text-orange-400">02:27 <span class="text-xl">PM</span></p>
+                  <p class="text-3xl font-bold text-orange-400">02:30 <span class="text-xl">PM</span></p>
                 </div>
                 <div class="flex-1 text-center md:text-left">
                   <h3 class="text-2xl font-bold">Rhythm & Ideas</h3>
@@ -128,7 +128,7 @@
               <!-- Mid-Show Highlights -->
               <div class="fade-in-up flex flex-col md:flex-row items-center gap-4 bg-white/10 backdrop-blur-sm p-6 rounded-2xl" style="animation-delay: 1.4s;">
                 <div class="w-full md:w-1/4 text-center md:text-right border-b-4 md:border-b-0 md:border-r-4 border-orange-400/50 pb-4 md:pr-6">
-                  <p class="text-3xl font-bold text-orange-400">02:48 <span class="text-xl">PM</span></p>
+                  <p class="text-3xl font-bold text-orange-400">02:45 <span class="text-xl">PM</span></p>
                 </div>
                 <div class="flex-1 text-center md:text-left">
                   <h3 class="text-2xl font-bold">Mid-Show Highlights</h3>
@@ -180,7 +180,7 @@
     </div>
 
     <?php include 'assets/includes/footer.php'; ?>
-    <canvas id="interactiveCanvas" class="fixed top-0 left-0 w-full h-full pointer-events-none z-0"></canvas>
+   
     <?php include 'assets/includes/js-links-inc.php'; ?>
 
     <script src="assets/js/main.js"></script>
