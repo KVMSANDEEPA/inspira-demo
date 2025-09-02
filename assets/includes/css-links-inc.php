@@ -12,4 +12,5 @@
     <link rel="android-chrome-icon" sizes="192x192" href="assets/img/favicon/android-chrome-192x192.webp">
     <link rel="android-chrome-icon" sizes="512x512" href="assets/img/favicon/android-chrome-512x512.webp">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-657T267K9B"></script>
     
