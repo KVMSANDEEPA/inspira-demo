@@ -268,7 +268,7 @@
         .speaker-card:hover {
             transform: translateY(-10px);
             color: var(--primary);
-            background-color: #F28C1A;
+            background-color: #D78600;
         }
 
   /* Glow effect for the button */

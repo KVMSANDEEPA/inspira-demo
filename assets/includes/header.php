@@ -1,6 +1,4 @@
-<div id="loader" class="animated-gradient">
-        <img src="assets/img/logo.webp" alt="Loading Logo" class="loader-logo">
-    </div>
+
 
      <header class="fixed top-2 sm:top-4 left-1/2 -translate-x-1/2 w-[96%] max-w-7xl rounded-2xl z-50 bg-[#541C1C]/60 backdrop-blur-lg">
         <div class="container mx-auto px-6 py-3 flex justify-between items-center">

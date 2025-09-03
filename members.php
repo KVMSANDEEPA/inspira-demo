@@ -23,6 +23,10 @@
 .container{
     padding-right: 0px;
 }
+
+.p-4 h5{
+    color: #511D16;
+}
 </style> 
 </head>
 <body class="animated-gradient text-white overflow-x-hidden">
@@ -61,7 +65,7 @@
                         <div class="speaker-card " id="member2">
                             <img src="assets\img\Org\ICT_2024_130 - Pamodha Vikum.webp" class="img-fluid">
                             <div class="p-4">
-                                <h5>Pramodha Vikum</h5>
+                                <h5 >Pramodha Vikum</h5>
                                 <p class="text-primary mb-1">Assistant Event Coordinator</p>
                                 <!-- <div class="d-flex">
                                     <a href="#" class="text-dark me-3"><i class="fab fa-twitter"></i></a>

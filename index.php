@@ -25,7 +25,9 @@
 
     <?php include 'assets/includes/header.php'; ?>
 
-
+<div id="loader" class="animated-gradient">
+        <img src="assets/img/logo.webp" alt="Loading Logo" class="loader-logo">
+    </div>
     <div class="min-h-screen w-full flex flex-col items-center justify-center p-4 sm:p-6 lg:p-8 pt-32 sm:pt-40 pb-24" style="padding-top: 150px !important;">
 
         <main class="w-full max-w-4xl mx-auto text-center flex flex-col items-center">
