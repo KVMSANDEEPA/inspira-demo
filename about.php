@@ -82,9 +82,9 @@
 
 <section class="py-5">
   <h1 class="text-center section-title">Event Schedule</h1>
-  <div class="d-flex justify-content-center my-4">
+  <div class="d-flex justify-content-center pt-5">
     
-    <a href="agenda.php" class="btn btn-outline-warning btn-lg rounded-pill ms-3">View Agenda</a>
+    <a href="agenda.php" class="btn btn-outline-warning btn-lg rounded-pill "> &nbsp; View Agenda &nbsp;</a>
   </div>
 </section>
 
