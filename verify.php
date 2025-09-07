@@ -5,15 +5,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verify Certificate - INSPIRA 2025</title>
-<?php include 'assets/includes/css-links-inc.php'; ?>
-    <link rel="stylesheet" href="assets/css/verify.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+     <link rel="icon" href="assets/img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.webp">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.webp">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.webp">
+    <link rel="android-chrome-icon" sizes="192x192" href="assets/img/favicon/android-chrome-192x192.webp">
+    <link rel="android-chrome-icon" sizes="512x512" href="assets/img/favicon/android-chrome-512x512.webp">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-657T267K9B"></script>
+    
+
+   <style>
+     body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .animated-gradient {
+            background: linear-gradient(-45deg, #541C1C, #6B2E2E, #874C1B, #541C1C);
+            background-size: 600% 600%;
+            animation: waveFlag 10s ease infinite;
+        }
+
+        @keyframes waveFlag {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        
+        .glow-button {
+            transition: all 0.3s ease;
+            box-shadow: 0 0 5px rgba(242, 140, 26, 0.3), 0 0 10px rgba(242, 140, 26, 0.2);
+        }
+
+        .glow-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 15px rgba(242, 140, 26, 0.6), 0 0 25px rgba(242, 140, 26, 0.4);
+        }
+
+        .btn-verify {
+            background-color: #874C1B;
+        }
+
+        .btn-verify:hover {
+            background-color: #6e3d15;
+        }
+
+        .btn-clear {
+            background-color: #541C1C;
+        }
+
+        .btn-clear:hover {
+            background-color: #3d1414;
+        }
+        
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #F28C1A;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            display: block;
+            margin-top: 5px;
+            right: 0;
+            background: #F28C1A;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+            left: 0;
+        }
+
+        .input-hover-effect {
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .input-hover-effect:hover {
+            border-color: #F28C1A; 
+            box-shadow: 0 0 10px rgba(242, 140, 26, 0.3);
+        }
+   </style>
     
 </head>
 
 <body class="animated-gradient text-white overflow-x-hidden">
 
-<?php include 'assets/includes/vheader.php'; ?>
-    <div class="min-h-screen w-full flex flex-col items-center justify-center p-4 sm:p-6 lg:p-8 mt-24 sm:mt-28 pb-24">
+
+   
+    <!-- End Header -->
+    <div class="min-h-screen w-full flex flex-col items-center justify-center p-4 sm:p-6 lg:p-8  sm:mt-28">
         <main class="w-full max-w-2xl mx-auto text-center flex flex-col items-center">
 
             <h1 class="text-4xl sm:text-5xl font-black uppercase tracking-wider" style="text-shadow: 0 4px 15px rgba(0,0,0,0.3);">
@@ -21,8 +122,8 @@
             </h1>
             <p class="text-lg font-semibold mt-2 text-gray-300">Enter the Certificate ID to verify its authenticity.</p>
 
-            <div class="w-full max-w-md bg-white/10 backdrop-blur-sm p-6 sm:p-8 rounded-2xl mt-10">
-                <form id="verify-form" class="flex flex-col sm:flex-row gap-4">
+            <div class="w-full max-w-md bg-white/10 backdrop-blur-sm p-6 sm:p-8 rounded-2xl ">
+                <form id="verify-form" class="flex flex-col sm:flex-row ">
                     <input type="text" id="certificate-id"
                         class="w-full bg-gray-900/50 text-white border-2 border-orange-400/50 rounded-full px-5 py-3 focus:ring-2 focus:ring-orange-400 focus:border-orange-400 focus:outline-none placeholder-gray-400 input-hover-effect"
                         placeholder="Enter Certificate ID (e.g., fas001)" required>
