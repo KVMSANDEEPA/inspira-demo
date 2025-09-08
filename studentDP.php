@@ -43,11 +43,17 @@ include "assets/includes/header1.php";
         <div class="logo">
             <i class="fas fa-check-circle" style="color: #00c853;"></i>
         </div>
-
+<div>
         <img id="profile-pic" class="profile-pic" src="" alt="Profile Picture">
         <h2 id="welcome-message">Welcome, Student!</h2>
         <p>Your profile picture is ready for download.</p>
-
+         <br>
+            For any changes, please contact Janith. 
+            <a href="https://wa.me/94771365944?text=Hello%20Janith%2C%20I%20would%20like%20to%20update%20my%20profile%20picture%20(DP).%20Could%20you%20please%20assist%20me%3F%20Thank%20you." 
+               target="_blank" class="whatsapp-btn">
+                <i class="fab fa-whatsapp"></i> Contact on WhatsApp
+            </a>
+</div>  
         <div id="success-message" class="success-message">
             <i class="fas fa-check"></i> Picture downloaded successfully!
         </div>
