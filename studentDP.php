@@ -43,7 +43,6 @@ include "assets/includes/header1.php";
         <div class="logo">
             <i class="fas fa-check-circle" style="color: #00c853;"></i>
         </div>
-<div>
         <img id="profile-pic" class="profile-pic" src="" alt="Profile Picture">
         <h2 id="welcome-message">Welcome, Student!</h2>
         <p>Your profile picture is ready for download.</p>
@@ -53,7 +52,6 @@ include "assets/includes/header1.php";
                target="_blank" class="whatsapp-btn">
                 <i class="fab fa-whatsapp"></i> Contact on WhatsApp
             </a>
-</div>  
         <div id="success-message" class="success-message">
             <i class="fas fa-check"></i> Picture downloaded successfully!
         </div>
