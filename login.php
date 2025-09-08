@@ -17,10 +17,24 @@ $password = $input['password'] ?? '';
 // Validate
 if (isset($students[$index]) && $students[$index] === $password) {
     $photo_path = "photos/{$index}.jpg";
-    echo json_encode([
-        "success" => true,
-        "image" => file_exists($photo_path) ? $photo_path : null
-    ]);
+
+    if (file_exists($photo_path)) {
+        echo json_encode([
+            "success" => true,
+            "image" => $photo_path
+        ]);
+    } else {
+        // ✅ Valid login, but photo missing
+        echo json_encode([
+            "success" => false,
+            "reason" => "missing_photo",
+            "index" => $index
+        ]);
+    }
 } else {
-    echo json_encode(["success" => false]);
+    // ❌ Invalid login
+    echo json_encode([
+        "success" => false,
+        "reason" => "invalid_credentials"
+    ]);
 }

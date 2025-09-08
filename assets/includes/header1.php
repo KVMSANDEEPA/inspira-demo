@@ -255,6 +255,36 @@
             color: var(--dark);
             font-size: 14px;
         }
+        .whatsapp-btn {
+    background-color: #25D366;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.whatsapp-btn:hover {
+    background-color: #1ebe5a;
+}
+        /* @media (max-width: 500px) {
+            .container {
+                padding: 15px;
+            }
+
+            .header h1 {
+                font-size: 20px;
+            }
+
+            .profile-pic {
+                width: 150px;
+                height: 150px;
+            }
+        } */
+
     </style>
 </head>
 
