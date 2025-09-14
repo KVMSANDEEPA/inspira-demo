@@ -52,7 +52,7 @@ include "assets/includes/header1.php";
                target="_blank" class="whatsapp-btn">
                 <i class="fab fa-whatsapp"></i> Contact on WhatsApp
             </a>
-        <div id="success-message" class="success-message">
+        <div id="success-message" class="success-message" style="color: #ffffffff;">
             <i class="fas fa-check"></i> Picture downloaded successfully!
         </div>
 
