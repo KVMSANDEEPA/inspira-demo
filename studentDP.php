@@ -27,11 +27,14 @@ include "assets/includes/header1.php";
             </div>
 
             <button class="btn" onclick="login()"><i class="fas fa-sign-in-alt"></i> Get My Picture</button>
-
+<br><br>
+           
             <div id="error-message" class="error-message">
                 <i class="fas fa-exclamation-circle"></i> Invalid Student Registration number or password. Please try again.
             </div>
-
+<div style="text-align: center; margin-top: 10px;">
+    <a href="reset_password_api.php" class="btn"><i class="fas fa-key"></i> Forgot Password?</a>
+</div>
             <div class="info-box">
                 <p><i class="fas fa-info-circle"></i> Enter your Student Registration Number and Password to retrieve your profile picture.</p>
             </div>

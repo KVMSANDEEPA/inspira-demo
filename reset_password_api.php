@@ -3,19 +3,19 @@ session_start();
 $title = "Reset Student Password";
 include "assets/includes/header1.php"; // brings in your styles
 
-require 'src/PHPMailer.php';
-require 'src/SMTP.php';
-require 'src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
+require 'PHPMailer/src/Exception.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 $STUDENT_FILE = "students.txt";
 $OTP_EXPIRY = 300; // 5 minutes
 
-$GMAIL_USER = "inspira25.org@gmail.com";
-$GMAIL_PASS = "cbxsohmwbbzmgwho"; // Gmail App Password
-$GMAIL_FROM = "inspira25.org@gmail.com";
-
+$GMAIL_USER = "inspira2k25.rjt@gmail.com";
+$GMAIL_PASS = "wihh muhv bnsj cank"; // Gmail App Password
+$GMAIL_FROM = "inspira2k25.rjt@gmail.com";
+//iitb zkql ggoa qmjf
 function sendOTPEmail($to, $otp) {
     global $GMAIL_USER, $GMAIL_PASS, $GMAIL_FROM;
 
